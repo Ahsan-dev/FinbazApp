@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".EMICalculatorFragment">
+
+    <include
+        layout="@layout/savings_toolbar_layout"
+        android:id="@+id/emi_calculator_toolbar_id"/>
+    <View
+        android:id="@+id/emi_calculator_under_toolbar_view"
+        android:layout_below="@id/emi_calculator_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/card_back_seven"
+        android:layout_marginBottom="3dp"
+        android:elevation="2dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/emi_calculator_all_loan_scroll_relative"
+        android:layout_below="@id/emi_calculator_under_toolbar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:paddingRight="10dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="8"
+                >
+                <LinearLayout
+                    android:id="@+id/emi_calculator_personal_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/personal_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Personal Loan"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_horizontal" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_business_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/business_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Business Loan"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_horizontal" />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_home_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/home_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home     Loan"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_horizontal"
+                        />
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_gold_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/gold_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:text="Gold\n Loan"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_education_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/edu_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Education Loan"
+                        android:textSize="12sp"
+                        android:gravity="center_horizontal"
+                        android:textColor="@android:color/black"
+                        />
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_car_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/car_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:text="Car\n Loan"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_2_wheeler_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/two_wheeler_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:text="2-Wheeler Loan"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/emi_calculator_used_car_loan_linear"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/emi_selector_back_black"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/used_car_loan"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/black"
+                        android:gravity="center_horizontal"
+                        android:text="Used Car Loan"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/emi_calculator_under_functions_view"
+        android:layout_below="@id/emi_calculator_all_loan_scroll_relative"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/card_back_seven_invert"
+        android:layout_marginBottom="3dp"
+        android:elevation="3dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/emi_calculator_calculation_page_id"
+        android:layout_below="@id/emi_calculator_under_functions_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/emi_calculator_loan_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Loan"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            />
+
+        <RelativeLayout
+
+            android:id="@+id/emi_calculator_loan_amount_relative"
+            android:layout_below="@id/emi_calculator_loan_title"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loan Amount (INR):"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_margin="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_back_two"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+
+                >
+                <ImageView
+                    android:id="@+id/edit_text_drawable"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/inr"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/emi_calculator_loan_amount_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_toRightOf="@id/edit_text_drawable"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="8"
+                    android:gravity="center_horizontal"
+                    android:backgroundTint="@android:color/transparent"
+                    style="@style/Material.Widget.EditText.Light"
+                    android:inputType="numberDecimal"
+                    />
+
+
+            </RelativeLayout>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/emi_calculator_loan_amount_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                app:bsb_bubble_color="#EF5252"
+                app:bsb_bubble_text_size="12sp"
+                app:bsb_bubble_text_color="#FBF9FA"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                app:bsb_max="50000000"
+                app:bsb_min="1000"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="#FD4C07"
+                app:bsb_section_count="0"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="false"
+                app:bsb_show_section_mark="false"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"
+                app:bsb_track_color="#CACDC9"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/emi_calculator_interest_rate_relative"
+            android:layout_below="@id/emi_calculator_loan_amount_relative"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest Rate (ROI):"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_margin="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_back_two"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+
+                >
+                <ImageView
+                    android:id="@+id/edit_text_drawable_ir"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/offers"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/emi_calculator_ir_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_toRightOf="@id/edit_text_drawable_ir"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="4"
+                    android:layout_centerHorizontal="true"
+                    android:backgroundTint="@android:color/transparent"
+                    style="@style/Material.Widget.EditText.Light"
+                    android:inputType="numberDecimal"
+                    android:gravity="center_horizontal" />
+
+
+            </RelativeLayout>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/emi_calculator_ir_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                app:bsb_bubble_color="#EF5252"
+                app:bsb_bubble_text_size="12sp"
+                app:bsb_bubble_text_color="#FBF9FA"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                app:bsb_max="50"
+                app:bsb_min="0"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="#FD4C07"
+                app:bsb_section_count="0"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="true"
+                app:bsb_show_section_mark="false"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"
+                app:bsb_track_color="#CACDC9"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+
+            android:id="@+id/emi_calculator_tenure_relative"
+            android:layout_below="@id/emi_calculator_interest_rate_relative"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tenure (Months):"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                android:layout_margin="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edit_back_two"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+
+                >
+                <ImageView
+                    android:id="@+id/edit_text_drawable_tenure"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/tenure"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    />
+
+                <EditText
+                    android:id="@+id/emi_calculator_tenure_edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:layout_toRightOf="@id/edit_text_drawable_tenure"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_horizontal"
+                    android:maxLength="3"
+                    android:backgroundTint="@android:color/transparent"
+                    style="@style/Material.Widget.EditText.Light"
+                    android:inputType="numberDecimal"
+                    />
+
+
+            </RelativeLayout>
+
+            <com.xw.repo.BubbleSeekBar
+                android:id="@+id/emi_calculator_tenure_seek"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="5dp"
+                app:bsb_bubble_color="#EF5252"
+                app:bsb_bubble_text_size="12sp"
+                app:bsb_bubble_text_color="#FBF9FA"
+                android:layout_centerHorizontal="true"
+                android:paddingLeft="10dp"
+                app:bsb_max="240"
+                app:bsb_min="3"
+                app:bsb_progress="0"
+                app:bsb_second_track_color="#FD4C07"
+                app:bsb_section_count="0"
+                app:bsb_section_text_position="bottom_sides"
+                app:bsb_show_progress_in_float="false"
+                app:bsb_show_section_mark="false"
+                app:bsb_show_section_text="true"
+                app:bsb_show_thumb_text="true"
+                app:bsb_track_color="#CACDC9"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/emi_calculator_calculate_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:background="@drawable/back_toggle_sign"
+        android:layout_alignParentBottom="true"
+        android:textSize="17sp"
+        android:gravity="center_horizontal"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_margin="15dp"
+        android:padding="5dp"
+        android:elevation="5dp"/>
+
+
+
+</RelativeLayout>

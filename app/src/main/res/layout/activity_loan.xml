@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoanActivity">
+    <include
+        layout="@layout/savings_toolbar_layout"
+        android:id="@+id/loan_toolbar_id"/>
+
+
+    <ScrollView
+        android:id="@+id/loan_all_loans_scroll"
+        android:layout_below="@id/loan_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loan_personal_loan_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_back_thirteen"
+                >
+
+                <TextView
+                    android:id="@+id/loan_personal_loan_TitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Personal Loan"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/personal_loan_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loan_business_loan_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_back_thirteen"
+                >
+
+                <TextView
+                    android:id="@+id/loan_business_loan_TitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business Loan"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/business_loan_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/loan_home_loan_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_margin="8dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/card_back_thirteen"
+                >
+
+                <TextView
+                    android:id="@+id/loan_home_loan_TitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Home Loan"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:layout_alignParentLeft="true" />
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/home_loan_color"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"/>
+
+            </RelativeLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

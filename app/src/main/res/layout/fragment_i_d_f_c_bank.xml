@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:background="@drawable/card_back_two"
+tools:context=".IDFCBankFragment">
+
+<RelativeLayout
+    android:id="@+id/bank_intro_relative_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_back_two"
+    android:padding="10dp"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/idfc_bank_logo_card_view"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/idfc_savings_account_item_bank_logo"
+                android:layout_width="130dp"
+                android:layout_height="50dp"
+                android:src="@drawable/idfc_first_bank_logo"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idfc_bank_logo_card_view"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="3"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/idfc_savAcc_title"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            />
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:isIndicator="true"
+            android:layout_marginRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:transformPivotX="0dp"
+            android:transformPivotY="0dp"
+            android:max="5"
+            android:numStars="5"
+            android:progressTint="#FFD600"
+            android:rating="4"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="(4/5) 4,440 ratings)"
+                android:gravity="center_horizontal"
+                android:textColor="#E5EAEF"
+                android:layout_gravity="center_horizontal"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/eye_gray"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/idfcbank_savings_bank_details_functions_relative"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_below="@id/bank_intro_relative_id">
+    <HorizontalScrollView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:id="@+id/idfcbank_about_txt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:background="@drawable/back_phone_four"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/idfcbank_document_req_txt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/back_phone_two"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="Documents Required"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/idfcbank_prod_features_txt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Features"
+                android:background="@drawable/back_phone_two"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:id="@+id/idfcbank_bank_location_txt_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:background="@drawable/back_phone_two"
+                android:text="Branch Locations"
+                android:textStyle="bold"
+                />
+
+
+        </LinearLayout>
+
+
+
+    </HorizontalScrollView>
+
+</RelativeLayout>
+
+
+<RelativeLayout
+    android:id="@+id/idfcbank_savings_bank_details_functions_details_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/idfcbank_savings_bank_details_functions_relative"
+    android:background="@drawable/back_phone_three">
+
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/idfcbank_account_apply_txt_btn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Apply Here"
+    android:gravity="center_horizontal"
+    android:background="@drawable/back_toggle_sign"
+    android:layout_alignParentBottom="true"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginBottom="10dp"
+    android:textColor="@android:color/white"
+    android:textStyle="bold"
+    android:padding="6dp"
+    android:elevation="3dp"
+    />
+
+</RelativeLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/my_account_back"
+    tools:context=".MyProfileFragment">
+    <include
+        layout="@layout/myprofile_toolbar_layout"
+        android:id="@+id/my_profile_toolbar_id"/>
+
+
+    <LinearLayout
+        android:id="@+id/my_account_introduce_linear"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:weightSum="3"
+        android:orientation="vertical"
+        android:layout_below="@id/my_profile_toolbar_id"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:elevation="1dp"
+            android:layout_marginBottom="1dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:src="@drawable/profile"
+                android:layout_margin="15dp"
+                app:civ_border_color="#258"
+                app:civ_border_width="1dp"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Person's Name"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Person's email"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/email_icon"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Person's Mobile"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:drawableLeft="@drawable/phone_icon"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/check_credit_score_linear_btn"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@drawable/back_seven">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/speedometer"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Check Credit Score"
+                android:layout_gravity="center"
+                android:textColor="#1108FB"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_account_functions_linear"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="15dp"
+        android:weightSum="3"
+        android:layout_below="@id/my_account_introduce_linear"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/personal_details_linear_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back_eight">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Details"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/person_icon"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/employment_details_linear_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back_phone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employment Details"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/business"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lifestyle_details_linear_btn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/back_phone">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lifestyle Details"
+                android:textSize="12sp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@android:color/black"
+                android:gravity="center_horizontal" />
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@drawable/lifestyle"
+                android:layout_gravity="center_horizontal"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/my_account_functions_linear"
+        android:background="@drawable/back_phone">
+
+        <FrameLayout
+            android:id="@+id/frameId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </FrameLayout>
+    </LinearLayout>
+
+</RelativeLayout>

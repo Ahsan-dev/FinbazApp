@@ -1,0 +1,1253 @@
+<resources>
+    <string name="app_name">My First</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_bank_account">My Profile</string>
+    <string name="title_credit_card">Credit Card</string>
+    <string name="title_insurance">Insurance</string>
+    <string name="title_demat_account">Demat Account</string>
+    <string name="title_credit_score">Credit Score</string>
+    <string name="title_emi_calc">EMI Calculator</string>
+    <string name="title_refer_earn">Refer and Earn</string>
+    <string name="title_offers">Offers</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="query_items_spinner">
+        <item>--Query Type--</item>
+        <item>Loan</item>
+        <item>Savings Account</item>
+        <item>Insurance</item>
+        <item>Credit Card</item>
+        <item>Demat Account</item>
+        <item>Credit Score</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>--Select--</item>
+        <item>Male</item>
+        <item>Female</item>
+
+    </string-array>
+
+    <string-array name="employment_type_array">
+
+        <item>--Select--</item>
+        <item>Salaried</item>
+        <item>Self employed</item>
+        <item>Self employed professional</item>
+        <item>Self employed business</item>
+        <item>Retired</item>
+    </string-array>
+
+
+    <string-array name="working_experience_array">
+
+        <item>--Select--</item>
+        <item>0–6 months</item>
+        <item> 6–12 months</item>
+        <item>1–3 years</item>
+        <item>3+ years</item>
+
+    </string-array>
+
+    <string-array name="monthly_income_array">
+
+        <item>--Select--</item>
+        <item> below 10,000</item>
+        <item> 10k-25k</item>
+        <item>25k-50k</item>
+        <item>50k+</item>
+
+    </string-array>
+
+    <string-array name="residence_type_array">
+
+        <item>--Select--</item>
+        <item>Parental</item>
+        <item>Owned</item>
+        <item>Rented</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="marital_status_array">
+
+        <item>--Select--</item>
+        <item>Single</item>
+        <item>Married</item>
+        <item>Married with children</item>
+        <item>Married without children</item>
+        <item>Divorced</item>
+        <item>Others</item>
+
+    </string-array>
+
+    <string-array name="vehicle_type_array">
+
+        <item>--Select--</item>
+        <item>Two Wheeler</item>
+        <item>Four Wheeler</item>
+        <item>Not using</item>
+
+    </string-array>
+
+
+    <string name="kotak_savAcc_title">Kotak 811 Savings Account</string>
+    <string name="rbl_savAcc_title">RBL Bank Digital Savings Account</string>
+    <string name="digibank_savAcc_title">Digibank by DBS Savings Account</string>
+    <string name="indusind_savAcc_title">IndusInd Bank Savings Account</string>
+    <string name="idfc_savAcc_title">IDFC First Bank Digital Savings Account</string>
+
+    <string name="notice_to_customer">This is to notify all the users that www.finbaz.com or Finbaz app offers its services free of cost to its users and does not demand any payments with respect to their applications for financial products offered through its website and mobile app.
+All the users are advised not get tempted and be cautious of any phone calls, SMSs and E-mails asking for depositing any processing fees/additional charges in return for expediting credit card or loan approvals.
+In case any such situation arises, you may bring the details of such suspicious communications to the notice of the company and the local police.</string>
+
+    <string name="indusind_about_string">IndusInd Bank is a universal Bank with a widespread banking footprint with over 2.5 crore customers, over 5,000 distribution points and nearly 2,000 branches across the country. With ‘Sustainability’ at the core, we offer a wide array of products and services for individuals and corporates including microfinance, personal loans, personal and &amp; commercial vehicles loans, credit cards and SME loans. We are also a preferred banking partner for various Government entities, PSUs and large corporates.</string>
+    <string name="kotak_about_string"> Kotak Mahindra Bank Limited is an Indian private sector bank headquartered in Mumbai, Maharashtra, India. It offers banking products and financial services for corporate and retail customers in the areas of personal finance, investment banking, life insurance, and wealth management. As of April 2019, it is the second largest Indian private sector bank by market capitalization, with 1600 branches &amp; 2519 ATMs.</string>
+    <string name="digibank_about_string"> DBS is a leading financial services group in Asia, with over 280 branches across 18 markets. Headquartered and listed in Singapore, DBS has a growing presence in the three key Asian axes of growth: Greater China, Southeast Asia and South Asia. The bank\'s "AA-" and "Aa1" credit ratings are among the highest in the world.>
+        Recognised for its global leadership, DBS has been named “Global Bank of the Year” by The Banker and “Best Bank in the World” by Global Finance. The bank is at the forefront of leveraging digital technology to shape the future of banking, having been named “World’s Best Digital Bank” by Euromoney. In addition, DBS has been accorded the “Safest Bank in Asia” award by Global Finance for ten consecutive years from 2009 to 2018.DBS provides a full range of services in consumer, SME and corporate banking. As a bank born and bred in Asia, DBS understands the intricacies of doing business in the region’s most dynamic markets. DBS is committed to building lasting relationships with customers, and positively impacting communities through supporting social enterprises, as it banks the Asian way. It has also established a SGD 50 million foundation to strengthen its corporate social responsibility efforts in Singapore and across Asia.
+        With its extensive network of operations in Asia and emphasis on engaging and empowering its staff, DBS presents exciting career opportunities. The bank acknowledges the passion, commitment and can-do spirit in all of our 26,000 staff, representing over 40 nationalities.</string>
+    <string name="rbl_about_string">RBL Bank is one of India’s fastest growing private sector banks with an expanding presence across the country. The Bank offers specialized services under six business verticals namely: Corporate &amp; Institutional Banking, Commercial Banking, Branch &amp; Business Banking, Retail Assets, Development Banking and Financial Inclusion, Treasury and Financial Markets Operations. It currently services over 8.44 million customers through a network of 392 branches, 1,221 business correspondent branches (of which 263 banking outlets) and 389 ATMs spread across 28 Indian states and Union Territories.\n\n
+        RBL Bank is listed on both NSE and BSE (RBLBANK).</string>
+    <string name="idfc_about_string">IDFC FIRST Bank Limited, listed in NSE and BSE, is a leading Indian financial institution, specializing in providing debt financing to MSMEs and Consumers in India.\n\n
+        Between 2008 to 2010, the Company was largely in the business of wholesale Financing, asset management, and had JVs in Foreign Exchange and retail equity Broking. Between 2010 to 2012, Mr. Vaidyanathan acquired a stake in the company, changed the business model to retail, and executed a Management Buyout of the company by securing equity backing from Warburg Pincus for Rs. 810 Crores and changed the name of the company to IDFC FIRST Bank. In the process the company got new shareholders, reconstituted a new board and started new retail business lines.\n\nThe Market Cap of IDFC FIRST Bank has increased from Rs. 7.90 billion ($121 mn) on June 30 2012 (FY ending prior to the buyout) to Rs. 60.96 bn on June 30, 2018. ($0.94 bn).
+        The founding theme of IDFC FIRST Bank is that financing India\'s 50 million MSMEs and its emerging middle class, with a differentiated model, based on new technologies provides a large and unique opportunity.\n\nUnlike traditional models of financing, IDFC FIRST Bank has successfully created new models to finance MSMEs and Indian consumers, in the hitherto unbanked and under-penetrated segments. The Company uses a differentiated model, based on new technologies and deep analytics. With this differentiated approach, IDFC FIRST Bank has financed over 7.0 million customers in more than 225 locations across India and built loan assets of Rs 326.22 Bn (USD 4.47 bn) as on 30 September, 2018, with 91% of its loan assets in the Consumer &amp; MSME financing space. IDFC FIRST Bank has maintained high asset quality over the years. The Gross and Net NPA of the Company is 1.62% and 1.00% respectively as of 30th June 2018 on 90 dpd NPA recognition basis.\n\n
+        The company enjoys the highest long term credit rating of AAA. IDFC FIRST Bank is focused on building an institution on strong pillars of ethics, values and high corporate governance.\n\n</string>
+
+
+    <string name="bank_doc_req_string">   All you require is your Aadhaar Number and PAN.\n
+You should be carrying your registered mobile number linked with Aadhaar while opening this account.\n
+Again,\n\n
+● PAN Card\n
+● Aadhaar Card\n
+● Mobile number linked in Aadhaar</string>
+
+
+    <string-array name="indusind_features_array">
+        <item>  Get account number of your choice</item>
+        <item>  Fingerprint banking on Indus Mobile</item>
+        <item>  Free IMPS/NEFT/RTGS transactions on Online Channels</item>
+        <item>  Balance and Transaction Alerts on Whatsapp</item>
+        <item>  Discount on Locker</item>
+        <item>  Access to Tapzo All In One Store for Cab</item>
+        <item>  Booking, Food Ordering etc. on Indus Mobile</item>
+        <item>  Free Cash Withdrawal &amp; Free Cash Deposit up to Rs 2 Lacs</item>
+    </string-array>
+
+
+    <string-array name="kotak_features_array">
+        <item>  Welcome to the future of mobile banking!\n The Kotak 811 bank account packages the entire digital banking ecosystem into your smartphone. Get best deals on shopping, travel, entertainment and meet all your banking/investment needs on the move with just a few clicks on Kotak Mahindra mobile app. </item>
+        <item>  Instant Account Opening\n
+No visiting any bank branch or leaving your home. Just open your Kotak 811 account on smartphone or through a browser in an instant and quickly log in to the world of seamless digital banking.
+</item>
+        <item>  No minimum balance commitment\n
+Worried about paying charges for low balance in your account? Now enjoy no minimum balance commitment on your Kotak 811 bank account and experience true financial freedom.</item>
+        <item>  Up to 4%* Interest Rate per annum\n
+Earn up to 4%* interest annually on your account balance and let your bank account earn more money while you work or play!</item>
+        <item>  ActivMoney Auto Sweep in Facility\n
+Want to earn higher interest of a fixed deposit (FD)? Set your sweep-in and sweep-out limit and see your funds being converted into an FD immediately.
+Avail higher interest rate through funds converted into Fixed Deposit. For details of the fixed deposit interest rate, click here.
+Eliminate the need to track your funds regularly and give instructions to the Bank for Fixed Deposit creation
+Greater flexibility and liquidity as the funds flow back into your savings account when required
+ To enable ActivMoney for your 811 account, visit your nearest branch or call our call centre at 1860 266 0811**</item>
+        <item>  Banking solutions at a single touch\n
+Now you can open your investment account or book TD /RD in a single click from 811 Mobile banking app. You can also request for Chequebook, transfer funds or walk into a branch for cash transactions and enjoy many more benefits of a savings account^^</item>
+        <item>  Virtual Debit Card\n
+The Debit Card is no more plastic with 811. It\'s a Virtual Debit Card, shrunk to fit in your mobile. Check the card details within the safety of your app and use it to make online payments like Shopping, paying bills or recharging mobile / DTH, in few taps.</item>
+        <item>  Scan and Pay***\n
+You don’t need cash or cards to make payments. Now paying has become simpler with the Scan &amp; Pay feature. With this pay for all you’re shopping, movies, groceries, and much more</item>
+        <item> Shop, Travel, and More^\n
+No need for multiple apps on your phone when you have the Kotak Mobile Banking App. Go to the Kaymall section  shop on Flipkart, subscribe to national/international magazines, book your flight and hotels on Goibibo or  train tickets^ on  IRCTC  at the best rates all with your Kotak 811 account.</item>
+    </string-array>
+
+
+    <string-array name="digibank_features_array">
+        <item>  Seamless, paperless and quick.\n Open a digiSavings account in seconds with Aadhaar</item>
+        <item>  Competitive interest rates on savings, fixed and recurring deposits</item>
+        <item>  Free 24x7 fund transfers With UPI, IMPS, NEFT and RTGS</item>
+        <item> Features and Benefits\n
+Opening a digiSavings account is seamless, paperless and happens in seconds.</item>
+        <item>  Branchless, Signatureless, Paperless.\n
+Simply verify your details through an OTP on your Aadhaar linked mobile number and your savings account is instantly activated.</item>
+        <item>  Get the maximum out of your digiSavings with biometric verification at any of our partner stores or by calling our agent to visit you at a place and time of your choice! Setting up a digiSavings account is seamless, paperless and happens in seconds.</item>
+        <item>  Simple process, ample security\n
+While making banking easy, we’ve strengthened your security. digibank is powered by automated authentication, safer than OTPs. That’s just one reason why DBS Bank has been awarded ‘Safest Bank in Asia’ by Global Finance for ten years in a row. Rest assured, your money is in safe hands.
+</item>
+        <item>  Say Hello to Tap to Pay\n
+The latest innovation in VISA payments that lets you make cashless, contactless, PIN-less payments. Yep, you simply have to wave your digibank debit card at a Tap to Pay enabled terminal to pay for transactions up to Rs. 2,000. No swiping or dipping is required as your digibank debit card is enabled with VISA Tap to Pay.</item>
+        <item> Many happy returns.\n
+Enjoy greater returns on your savings. You get up to 5% interest on savings and cashback of up to 10% on shopping from a wide range of online merchants. T&amp;C Apply.</item>
+    </string-array>
+
+
+    <string-array name="rblbank_features_array">
+        <item> Check your transactions:\n Anytime you want to check on any transactions in your account, just log in to RBL MoBank 2.0, and they will all be there. Find out if payments have been debited, and funds credited to your account instantly. No more waiting for statements to arrive from the bank!</item>
+        <item> Funds transfer:\n Transferring funds has never been so easy. No more writing cheques – you can transfer money instantly to anyone, whether it’s family members, suppliers, or retailers. Plus there are several options like IMPS, NEFT and RTGS. And most of these fund transfers are free with no additional cost involved.</item>
+        <item>  Easy cash withdrawal:\n Withdraw cash from any of RBL Bank ATMs across the country at no cost, or from those of any other bank (charged from 11th transaction onwards).</item>
+        <item>  Higher interest rates:\n Take advantage of higher interest rates on your Digital Savings Account.</item>
+        <item>  Bill pay:\n Worry no more about paying your bills on time. Our Digital Savings Account has a bill pay facility that enables you to pay all your electricity, landline, mobile, gas and other bills quickly and easily.</item>
+        <item>  Debit card:\n When you open a Digital Savings Account at RBL Bank, you also get an ATM card that doubles up as a debit card. Use the Titanium First Debit Card to avail discounts and cashbacks.</item>
+        <item>  Safe and secure banking:\n We have robust security systems to ensure that your account is safe. Measures like two-factor authentication ensure that your account is safe and secure, and only you can access it.</item>
+        <item>  Investments made easy:\n Our Digital Savings Account makes investing so easy. You can put your spare cash in fixed deposit in a matter of seconds and ensure that you maximise your returns. You can also put your money in other avenues like mutual funds through our Digital Savings Account.</item>
+        <item> Banking on the move:\n Here’s another big advantage of having a RBL Bank Digital Savings Account – you can bank on the move. Want to pay your bills? Do it using your RBL MoBank 2.0 banking mobile app, on the train, in the car, or while waiting at the airport!</item>
+    </string-array>
+
+
+    <string-array name="idfc_features_array">
+        <item>  Savings Account With VISA Signature Card\n
+Free, unlimited ATM withdrawal.</item>
+        <item> Purchase protection of ₹1 lakh.</item>
+        <item> Higher Personal accident coverage of ₹25 lakh.</item>
+        <item> Higher lost card liability of ₹4 lakh.</item>
+        <item> Air accident cover of ₹50 lakh.</item>
+        <item> BookMyShow cashback of ₹250 per month.</item>
+        <item> Airport lounge access Twice in a quarter.</item>
+        <item> Higher daily cash withdrawal limit of ₹2 lakh, domestic ATM</item>
+        <item> Savings Account With VISA Classic Card\n
+5 Free ATM transactions per month at own and non-Bank ATMs.</item>
+        <item> Personal accident cover of ₹2 lakh.</item>
+        <item> Lost card liability of ₹50,000</item>
+        <item> Daily cash withdrawal limit of ₹1 lakh from domestic ATM.</item>
+        <item> Daily purchase limit of ₹1.5 lakh domestic</item>
+    </string-array>
+
+
+    <string name="upstox_account">Upstox Demat Account</string>
+    <string name="angel_broking_account">Angel Broking Demat Account</string>
+    <string name="icici_account">ICICI Securities Demat Account</string>
+    <string name="iifl_account">IIFL Demat Account</string>
+    <string name="sharekhan_account">Sharekhan Demat Account</string>
+    <string name="five_paisa_account">5Paisa Demat Account</string>
+
+    <string name="upstox_about">RKSV is a retail brokerage firm for securities and commodities headquartered in Mumbai, India. We help retail traders shave off their brokerage costs by providing online trading software (mobile and web) for free, and a low cost brokerage plan. Our core values revolve around great software, low pricing, and responsive support. We leverage the power of trading online to help traders all over India lower their brokerage costs.</string>
+    <string name="angel_broking_about">Our Company is one of the largest retail broking houses in India in terms of active clients on NSE as of June 30, 2020 (Source: CRISIL Report). We are a technology-led financial services company providing broking and advisory services, margin funding, loans against shares (through one of our Subsidiaries, AFPL) and financial products distribution to our clients under the brand “Angel Broking”. Our broking and allied services are offered through (i) our online and digital platforms, and (ii) our network of over 11,000 Authorised Persons (the “Authorised Persons”), as of June 30, 2020. We have had more than 4.39 million downloads of our Angel Broking mobile application and nearly 1 million downloads of our Angel BEE mobile application as of June 30, 2020, which enable our clients to avail our services digitally. Digital marketing has enabled our Company to garner 398 million digital impressions in June, 2020 on its various online and digital platforms. Our customer outreach, spans across approximately 96.87% or 18,649 pin codes in India as of June 30, 2020. We manage ₹ 132,540 million in client assets and over 2.15 million operational broking accounts as of June 30, 2020.\n\n
+Angel Broking Limited (formerly known as Angel Broking Private Limited) is a member of the Bombay Stock Exchange (BSE), National Stock Exchange (NSE), Metropolitan Stock Exchange of India (MSEI), NCDEX &amp; MCX. Angel Broking Limited (formerly known as Angel Broking Private Limited) is also registered as a Depository Participant with CDSL.</string>
+    <string name="five_paisa_about"><![CDATA[5Paise Capital Ltd (5PCL) was originally incorporated on July 10 2007 as a public limited company under the provisions of the CA 1956 as India Infoline Finance Holdings Limited with the ROC. The Company obtained the certificate for commencement of business on July 19 2007 from the ROC. The name of our Company was subsequently changed to IIFL Capital Limited and a fresh certificate of incorporation consequent upon change of name was issued by the ROC on November 06 2007. Thereafter the name of our Company was changed to 5paisa Capital Limited and a fresh certificate of incorporation consequent upon change of name was issued by Registrar of Companies Tamil Nadu at Chennai on August 12 2015. The company a wholly owned Subsidiary of IIFL Holdings Ltd is engaged in providing an online technology platform for trading in National Stock Exchange of India & BSE Ltd through web based trading terminal mobile application and a state of the art Call and Trade Unit. 5PCL is also a SEBI approved Research analyst a Depository Participant under CDSL and registered member of AMFI. 5PCL provides a wide range of financial services to its customers including depository services distribution Of mutual funds bonds and debentures Equity and Mutual fund research etc through its technology based platforms.On Sept 30 2016 the Board of Directors of 5paisa Capital Limited approved a draft Scheme of Arrangement under Section 391–394 Of the Companies Act 1956 with IIHFL Holdings Limited [\'IIFLH\'] and their respective shareholders to demerge 5palsa digital undertaking of IIFLH into 5PCL.]]></string>
+    <string name="iifl_about">IIFL Finance Ltd (erstwhile IIFL Holdings Limited) (NSE: IIFL, BSE: 532636) is one of the leading players in the Indian financial services space, engaged in the business of loans and mortgages along with its subsidiaries - IIFL Home Finance Limited and Samasta Microfinance Limited.\n\n
+
+IIFL’s product offerings include home loans, gold loans, business loans including loans against property and medium and small enterprise financing, micro finance, developer and construction finance and capital market finance; catering to both retail and corporate clients.\n\n
+
+The company\'s geographical presence spans the length and breadth of the country with 2,372 branches across 500+ cities.\n\n
+
+IIFL Home Finance Limited, a company incorporated under the Companies Act, 1956 (CIN:U65993MH2006PLC166475) and registered as a Housing Finance Company with the National Housing Bank vide Certificate of Registration (COR) No. 02.0070.09 dated February 3, 2009. The Company is a subsidiary of IIFL Finance.\n\n
+
+IIFL Securities Limited (Formerly India Infoline Limited) is one of the largest independent full-service retail and institutional broking house along with being a leading investment advisory firm in India providing diversified financial services and products to corporates, institutional investors, foreign portfolio investors, mutual funds, insurance companies, alternative investment funds, trusts, high net worth individuals and retail clients.\n\n
+        IIFL Wealth is one of the fastest growing private wealth management firms in India with an AUM greater than USD 21 billion**. We serve the highly specialized and sophisticated needs of high net worth and ultra-high net worth individuals, affluent families, family offices and institutional clients through a comprehensive range of tailored wealth management solutions.\n\n\n
+
+** as on 31st March 2020 across Distribution, AMC/Discretionary, Advisory and Discretionary (offshore) businesses.</string>
+
+    <string name="icici_about"> ICICI Securities Limited (I-Sec) is a subsidiary of ICICI Bank Ltd. The company began its operation in May 1995 and continues to grow its operation through expanding its client base and providing different type of services.\n\n
+
+I-Sec operates www.icicidirect.com, a virtual financial supermarket, meeting the three need sets of its clients - investments, protection, and borrowing. Through its four lines of businesses — broking, distribution of financial products, wealth management, and investment banking— I-Sec serves customers ranging from the retail and institutional investors to corporates to high net-worth individuals to government.\n\n
+
+I-Sec is registered with the Securities and Exchange Board of India (SEBI) as a Stock Broker, Merchant Banker, Portfolio Manager, Investment Adviser and Research Analyst. It is also registered as Corporate Agent with the Insurance Regulatory and Development Authority of India (IRDAI) and Point of Presence (POP) with the Pension Fund Regulatory and Development Authority of India (PFRDA) for distribution of National Pension Scheme (NPS).</string>
+
+    <string name="sharekhan_about">Sharekhan about : | Founded in 2000 and a subsidiary of BNP Paribas since November 2016, Sharekhan was one of the first brokers to offer online trading in India. With 20 lakh customers, 153 branches and more than 2400 business partners spread across over 541 locations, Sharekhan is one of the largest brokers in India. Sharekhan offers a wide range of savings &amp; investment solutions including equities, futures and options. currency trading, portfolio management, research and mutual funds and investor education. On an average, Sharekhan executes more than 400,000 trades daily.\n\n
+
+Guiding India\'s retail stock investors for 20 years\n\n
+Registered with NSE and BSE for capital market, futures and options and currency segments and CDSL and NSDL for depository services.\n\n
+A full-service stock broking firm providing online services right from online account opening to trading and investments.\n\n
+Created India’s best online trading platforms: Website (www.sharekhan.com), TradeTiger (the ultimate desktop trading software), Sharekhan App (available for Android and iOS devices) and Sharekhan Mini (a low bandwidth website especially for mobile browsers)\n\n
+A strong brick-and-mortar network with over 3200 outlets in 541 cities\n\n
+Research-based financial advice on all asset classes to suit all investing and trading styles\n\n
+Dedicated Education and training courses for investors and traders in association with Online Trading Academy.</string>
+
+    <string name="demat_company_docs_required">Step 1 - Fill in your personal details\n\n
+All you need to do is fill in your PAN No. and Date of Birth; and we will prefill all your details, so you can just verify it.\n\n
+
+What personal details will you have to share?\n\n
+Don’t worry, you do not need fill in any endless form for our free demat account. Just fill in the following details and we will prefill all your details, so that you can just verify it.\n
+PAN Number\n
+Date of Birth\n
+Aadhaar Number\n\n\n
+
+Step 2 - Enter your Bank details\n\n
+
+Enter your Bank Account Number and IFSC Code to fetch your bank details in one go. Let us assure you that all your information will be saved securely with us.\n
+
+Why is bank detail required for Demat Account?\n\n
+Bank detail is useful to ensure funds and securities settlement with your trading account. You can only start trading when you have a linked bank account to transfer funds. In order to trade, customer can accept or transfer funds only from the linked Bank account. Without a trading account, your demat account is merely a store for holding securities in digital form.\n\n\n
+Step 3 - Upload your documents\n\n
+We believe in saving paper. You just need to click a picture of your Pan Card and Address proof and upload it.\n\n\n\n
+    What documents are required for Demat Account opening?\n\n
+For a hassle-free account opening process, you need few documents. Here’s a list of documents you need to keep handy:\n
+PAN Card\n
+Address Proof\n
+Bank Details\n
+Photo\n\n\n
+
+Step 4 - e-Sign your form\n\n
+
+Review your complete form and e-sign it digitally using Aadhaar. Your account will be open in no time, subject to verification by our team\n\n
+
+Is in-person verification required for Demat Account?\n\n
+In-person verification is no longer required if you e-sign your form. However, all your documents are verified by our team online.</string>
+
+
+    <string-array name="five_paisa_features_array">
+        <item>What are the features &amp; benefits of Demat Account?\n\n
+•	All your investments are held in an electronic form, which reduces paperwork.\n
+•	Eliminates all the risks associated in dealing with physical shares like physical damage or misplacement.\n
+•	Ensures safety of your stocks with no storing risks.\n
+•	Quick transfer of shares.\n
+•	Allows faster transaction, resulting in quick credit for investors.</item>
+
+        <item>Open Demat Account\n\n
+Invest in Stock Market with 0% Brokerage\n\n
+•	Flat fee per order\n
+•	An all-in-one account\n
+•	Advanced trading platforms\n
+•	Lowest Cost</item>
+
+        <item>Superior Offerings\n\n
+•	Enjoy flat fee per executed order across all segments. Save on brokerage and charges with cost-effective pricing plans and enjoy unlimited access to advanced research tools.</item>
+
+        <item>Award Winning Trading Platforms\n\n
+•	No matter what’s your choice- web, mobile or desktop, enjoy 5paisa’s cutting edge, fast and more importantly stable platforms for trading.</item>
+        <item>Advanced Research Tools
+•	Get free access to superior research products like Swing Trader, Smart Investor, Smallcase , Portfolio Analyser, Sensibull with our pricing plans.</item>
+        <item>
+            100% Paperless Account Opening\n\n
+•	Get started with your demat &amp; trading account in 5 mins. Minimal documentation ensures that you start investing right away.
+        </item>
+
+        <item>
+            Swing Trader\n\n
+•	A world-class equity tool that combines fundamental and technical analysis for short term trading
+
+        </item>
+
+        <item>
+            Smart Investor\n\n
+•	Build your portfolio with stocks handpicked by our expert research team
+        </item>
+
+        <item>
+            Swing Trader\n\n
+•	A world-class equity tool that combines fundamental and technical analysis for short term trading
+
+        </item>
+
+        <item>
+            Portfolio Analyser\n\n
+•	Advanced analytical tools to track portfolio performance and analyse decisions
+        </item>
+
+
+        <item>
+           Screeners\n\n
+•	Track and trade stocks on Fundamental, Technical, Price/Volume, Shareholdings and multiple rules based indicators to gain edge in market.
+        </item>
+
+
+        <item>
+            Smallcase\n\n
+•	Modern way to invest in portfolios of stocks or ETFs.
+        </item>
+
+
+        <item>
+            Sensibull\n\n
+•	One step solution for all option trading.
+        </item>
+
+    </string-array>
+
+
+    <string-array name="upstox_features_array">
+        <item>What are the benefits of trading with Upstox?\n\n
+Upstox is certified with the market regulator Securities and Exchange Board of India (SEBI). It has exchange memberships with all the leading exchanges in India, including the NSE, BSE, and MCX. It is safe and a convenient option for all your stock market trading needs. And there are many benefits of trading with Upstox over any other brokerage firm in India.</item>
+
+        <item>Save costs\n\n
+As a low-cost broker, the first obvious benefit is—you save tremendously. You are bound to save costs. Most brokers in India charge brokerage as a percentage of turnover, but not Upstox. So, you don’t pay brokerage on your trades with Upstox.</item>
+
+        <item>Industry heavyweight\n\n
+Another benefit with Upstox is the fact that we are an industry heavyweight. Despite beginning operations in 2012, our customers already account for Rs 5000 crore-worth daily turnover across all exchanges. This amounts to almost 2% of the total turnover on the NSE. We have tens of thousands of customers all across India in each and every state. This includes a lot of tier I, II, and III cities.
+
+        </item>
+
+        <item>Seamless account opening procedure\n\n
+The market regulator Securities and Exchange Board of India (SEBI) has mandated that every broker verify the details of their customers as part of the Know Your Customer (KYC)norms. This includes conducting an In-person Verification (IPV). We conduct this process over the web. So, your account opening process is seamless as well as quick. The whole process of opening an account, thus, usually takes 1-2 working days. While most brokers take days, sometimes weeks, to open up trading accounts for their clients, we strive to open yours as quickly and seamlessly as possible.
+
+        </item>
+        <item>Superior technology\n\n
+Upstox is also a strong proponent of leveraging technology. In fact, we consider ourselves as a technology-based firm that is placed in the financial services space. We look to constantly innovate and provide you with tools to help make better and wiser trading decisions. Our brokerage calculator, SPAN calculator, and options builder tool are just some examples of how we leverage technology to provide you with superior trading tools.
+        </item>
+
+        <item>
+            Quality customer service\n\n
+We pride ourselves in having one of the best customer service teams in India. We strive to answer all calls within 30 seconds to minimize hold times, and our online ticketing system ensures that queries are answered promptly.
+        </item>
+
+    </string-array>
+
+
+    <string-array name="icici_features">
+
+        <item>Ease of investing in equity market without hassle of holding shares in physical form is one of the main feature of Demat account. As stocks are held in electronic format there is no fear of physical damage to share certificates or theft. A demat account is a safe, convenient, and an efficient way of holding your valuable investment certificates/securities.</item>
+
+        <item>Advantages/Benefits of Demat account\n\n
+Elimination of costs such as handling expenses, stamp duty, safety etc. which is involved in physical securities</item>
+
+        <item>No paperwork since securities held in electronic form\n\n
+Electronic credit of all corporate action of the respective company directly to your Demat Account (Bonus/splits/mergers) or to the linked bank account (Dividends, etc.)</item>
+
+        <item>Account can be opened under BSDA Facility (Basic Service Demat Account).</item>
+
+        <item>Zero risk as it is the Secure and convenient way to keep track of shares.</item>
+
+        <item>Quick Settlement\n\n
+Time-Saving as electronic format is instant</item>
+
+        <item>No Storage Risk –It eliminates the threat of theft, forgery, fake certificates, non-delivery, etc.</item>
+
+    </string-array>
+
+
+    <string-array name="iifl_features">
+
+        <item>By opening a Demat account, you enjoy access to a number of useful features. Here are some of the most important ones.\n\n
+•	Share transfer: Transferring your shares is extremely easy with a Demat account. You only need to send in a duly signed Delivery Instruction Slip (DIS) to your depository participant to transfer your shares.\n
+•	Loan collateral: You can pledge the securities you hold in a Demat account and use them as collateral for securing a loan from a financial institution.\n
+•	Temporary freeze: You can temporarily freeze your Demat account for a specific duration. However, this feature is generally only made available if you hold a specific number of shares in your account.\n
+•	Quick transfer of benefits: Demat accounts offer swift transfer of benefits such as dividends, bonus issue of shares, stock splits, interest, and refunds.\n
+•	Speed e-facility: NSDL allows you to send instruction slips to your depository participant electronically. This not only makes the entire process faster, but also makes it less cumbersome.
+
+
+        </item>
+
+        <item>Benefits of a Demat Account\n\n
+In addition to being an indispensable part of the share market, Demat accounts come with several benefits such as:\n
+•	Swift settlements and deliveries\n
+•	Increases share trading volume and market participation\n
+•	Increases transparency\n
+•	Eliminates paperwork\n
+•	Quick and easy communication with investors\n
+•	Little to no risks involved\n
+•	Builds trust and increases investor confidence\n
+</item>
+
+    </string-array>
+
+
+    <string-array name="sharekhan_features_array">
+
+        <item>LOWER RISK–Possessing shares in their paper format carries a lot of risks like loss, misplacing them, damage to the certificates, etc. Dematerialization of shares eliminates the risk of loss and damage to the securities. The paper certificates also had high incidences of forgery and theft. As the holdings are now in an electronic format, it has reduced the threat of forgery and theft.</item>
+        <item>EASY TO HOLD– A demat account makes equity trading and your shares accessible. You can trade in securities, view your holdings, transaction history, etc. at the click of a button. It also makes managing your details easy. You can make changes to your address, linked phone number, linked bank account, and such other account- related changes for every company stock all from your demat account.</item>
+        <item>EASE OF TRADING– Earlier, paper certificates had to be sent to the Company or the Registrar and Transfer authority to change the ownership of shares, which resulted in delays, additional costs and loss of certificates. With demat accounts; transfer of shares has become easier. Trading in shares, buying, storing, selling online has become seamless and streamlined.</item>
+        <item>REDUCED COSTS– Stamp duty applicable on transfer of physical shares, which was a cumbersome process for investors. Dematerialization of shares has eliminated the stamp duty and reduced all other transactional costs.</item>
+        <item>REDUCED TIME– A demat account minimizes the time taken to trade in equity investments. Buying and selling of shares is a quick process that can be done intra-day through an online trading platform. Similarly, changing personal details in your stocks can be done through a single demat account in which the shares are held. All this has reduced the time taken to trade in and manage securities for investors.</item>
+        <item>ODD-LOT PROBLEM RESOLVED– Earlier, there were multiple restrictions on the selling of shares. Shareholders could not sell shares in odd lots. Demat Accounts has eliminated those restrictions.</item>
+        <item>VARIETY OF INVESTMENTS- With the diversification of investment options, a demat account can store mutual funds, bonds, government securities, Exchange Traded Funds (ETF), etc.</item>
+
+    </string-array>
+
+
+    <string-array name="angel_broking_features_array">
+
+        <item>Benefits of a Trading account</item>
+        <item>Single Accessibility:\n\n
+By opting for the best trading account in India, investors can procure accessibility to all the stock exchanges across the country through a single platform. Some of these exchanges include the Bombay Stock Exchange (BSE), the National Stock Exchange (NSE), Multi Commodity Exchange (MCX), and the National Commodity and Derivatives Exchange (NCDEX).</item>
+        <item>Flexibility:\n\n
+Account holders can access their online trading accounts from anywhere, at any point in time. With browser and application-based trading platforms, trading accounts can be accessed through a computer, laptop, smartphones, tablets, and other smart devices.</item>
+        <item>Seamless Transactions:\n\n
+The advanced technology ensures clients receive seamless transactional capabilities. The entire process of transfer of funds and equities is completed without any hiccups. This provides clients the ability to invest and save with convenience and ease, using a secure trading platform.</item>
+        <item>Access to Reliable Research:\n\n
+To succeed in equity and other investing, having access to reliable research reports prepared by experienced and knowledgeable professionals is extremely helpful. Such reports are often supplied by the service providers, which makes it easier to make informed investment decisions. This can significantly increase the possibility of earning higher profits through investments.</item>
+        <item>Personalization and Alerts:\n\n
+Customers can access personalized customer support from trained executives in case they are facing any technical issues with their trading accounts. Moreover, clients can set personal alerts through messaging or emails, which means they do not miss out on their buy and sell targets.</item>
+        <item>Multiple Media:\n\n
+Placing orders through the online account is beneficial in streamlining the entire process. The different ways of accessing the account allow an investor to trade during market hours as well after-market hours, if the need so arises.</item>
+
+    </string-array>
+
+
+    <string name="upstox_charge">
+        You will be charged ZERO brokerage fee for equity delivery trading.\n
+For equity intraday trades, brokerage charges are Rs. 20 per order or 0.05% (whichever is lower) for both buy and sell orders.
+    </string>
+
+
+    <string name="angel_broking_charge_title"> In Angel Broking, we have simplified brokerage fees by implementing flat fees on intraday trading and making security delivery to your DEMAT, free for the lifetime. But there are still some charges and taxes that we need to collect from you. We prefer maintaining transparency at every level, and hence, here is a complete list of all the charges applicable to your transaction.
+
+\n\nPlease note these charges may change in the future and as per government and regulatory directives</string>
+
+
+    <string-array name="angel_broking_charge_array">
+
+        <item>Security Transaction Tax (STT)\n\n
+It’s a direct tax levied on every security transaction in the exchange, collected by the broker. STT is charged on both buying and selling on equity delivery, and on selling on intraday and F&amp;O.</item>
+
+        <item>Transaction / Turnover Charges\n\n
+Transaction / Turnover charges are levied by exchanges (NSE, BSE, MCX, NCDEX) and clearing charges are levied by clearing member for settling trades done by the clients.</item>
+
+        <item>
+Call and Trade\n\n
+An additional charge of Rs 20 applies to all executed order placed over the phone.</item>
+
+        <item>Offline Trade\n\n
+Trades which are not done online by clients are considered as offline trade. For e.g.: Margin Square-off, RMS Square-off, Auto Square-off, contract expiry etc.
+</item>
+
+        <item>Stamp Charges\n\n
+Until now, variable stamp charges applied at different states as per the Stamp Duty Act of 1899 on instruments transacted in the stock exchange. From July 1 2020, the government has decided to replace the current system with new uniform stamp duty rates in shares, debentures, futures and options, currency, and other capital assets. Please refer to the list above for the current rates.</item>
+
+        <item>GST\n\n
+An 18 percent GST applies on brokerage, transaction charges, SEBI Charges and Risk Management charges.</item>
+
+        <item>SEBI Charges\n\n
+The Security and Exchange Board of India (SEBI) charges fees on security transactions for regulating the market. Please check the above table for rates.</item>
+
+        <item>Annual Maintenance Charge (AMC)\n\n
+Angel Broking charges a flat annual maintenance charge (AMC) of Rs 450, plus taxes.</item>
+
+        <item>Depository Participant (DP) Charges\n\n
+Rs 20 plus GST applies on per scrip irrespective of volume when stocks are sold from the holding. Depository participant charges are collected by the depository and depository participant, that is Angel Broking.</item>
+
+
+    </string-array>
+
+
+    <string name="icici_charges">
+
+        The minimum brokerage for transactions up to ₹ 6364 on stocks quoting more than ₹ 10 is ₹ 35/- per trade or 2.5% of the trade value whichever is lower. Brokerage rates as mentioned above, will be charged for trade value exceeding ₹ 6364\n\n
+
+Brokerage on stocks quoting up to ₹ 10 would be levied at ₹ 0.05 per share. The total brokerage on such trade would be higher of ₹0.05 per share or ₹ 35, subject to maximum of ₹ 0.25 per share. All Statutory charges would be levied over and above the brokerage\n\n
+
+All Systematic Equity Plan transactions would attract brokerage equivalent to Cash segment. The minimum brokerage for transactions up to ₹ 2727 is ₹ 15 or 2.5% whichever is lower. All statuary charges would be levied over and above minimum brokerage. Brokerage rate mentioned above would be levied for trade value exceeding ₹ 2727\n\n
+Goods and Services Tax (GST), Securities Transaction Tax (STT), SEBI turnover charges, Transaction Charges(inclusive of GST) and Stamp duty will be charged in addition to brokerage as follows :\n
+
+GST will be charged at 18% on total value of brokerage\n
+
+Securities Transaction Tax (STT) at 0.1% on turnover\n
+
+SEBI turnover charges at 0.00005 per cent of his turnover (5 per crore)\n\n\n
+        Transaction Charges will be charged @ 0.0021% for NSE and Rs 0.75 per trade basis for all scrip\'s for BSE (Except for BSE listed securities "X","XC","XD","XT","Z","ZP","P" where transaction charges will be 0.1% and SS and ST segment 1% on turnover, "M","MT", "R" will be 0.0028%). Applicable GST would be charged over &amp; above Transaction charges\n\n
+
+For scrips falling under "SS" and "ST" category of BSE, Transaction Charges will be charged @ 1.0% on turnover. Rate charged on the contract note shall be similar to "X" segment and the differential rate shall be recovered separately. Debit note shall be issued for such recovery which can be viewed under "Customer Service > Statements > Debit / Credit Note"\n\n
+
+Applicable State wise Stamp Duty charges as per delivery and non-delivery would be levied on turnover\n\n
+
+Cash Brokerage shall be levied for Orders placed in OFS and Buyback apart from all other statutory charges\n\n
+Second leg of intra day square off transaction in cash will not be charged any brokerage
+
+    </string>
+
+
+    <string name="five_pasisa_charge">
+
+        5paisa is a flat fee broker. They charge brokerage at fixed ₹20 per executed order across the segments. Irrespective to the size of the trade, customer pays only ₹20 brokerage. This is up to 95% less brokerage in comparison of traditional brokers.\n\n
+
+In 1st year of is launch, 5paisa acquired over 7500 retail customers, which is very impressive in competitive discount brokerage space. 5paisa offers online paperless account opening which enables customer with Aadhaar card to open account and start trading online in just few hours.\n\n
+
+5paisa depository services (or 5paisa demat account) is one of the key services offered by 5paisa. The 2-in-1 account offered by 5paisa includes a trading and a demat account.\n\n
+
+Demat account holds shares, mutual funds, bonds etc. electronically, in a very similar manner where bank account holds money. The demat account allows customers to buy or sell the shares electronically without any paperwork.
+
+    </string>
+
+    <string name="sharekhan_charge">
+
+        Brokerage charges\n\n
+You pay for services rendered during the buying and selling of shares.\n\n
+Different DPs have their own brokerage charges. In general, most brokers charge brokerage in percentage terms.\n
+For Sharekhan, the brokerage is 3 paise per 100 paise for each intraday transaction.\n
+The amount is 30 paise per 100 paise for delivery.\n\n\n
+Services and charges\n\n
+Many DPs offer a varied set of services to demat account holders.\n
+However, you must choose to pay for the services you need. Try to choose an option that is in sync with your trading requirements and is cost-effective in the long run.\n
+Always aim at finding all costs involved before opening an account, as there is no point in paying for services you will not use.
+
+    </string>
+
+
+    <string name="iifl_charge">
+
+        Intra-day both side	0.05%\n\n
+Delivery (Normal) settlement	0.50%\n\n
+Trade for Trade and Z group scrip	0.75%\n\n
+Brokerage (FUTURES) both side	0.05%\n\n
+Brokerage (OPTIONS) Minimum	1% of Premium or Rs.100/- per lot whichever is higher\n\n
+Minimum per share Brokerage	Rs. 0.05\n\n\n\n
+
+
+        Notes:\n\n
+
+All other statutory levies as applicable will be levied, Goods and Services tax @18% will be charged in addition to brokerage. Goods and Services tax, STT and other statutory charges are as per current rate and any revision in the rates then the same will be applicable.\n
+For customers using our Call Center services which are equipped with modern technology, there will be a nominal charge of Rs.50 per call exclusive of Goods and Services Tax.\n
+For customers opting for email delivery (recommended for being environment friendly as well as quicker!) of contract notes or bills, there will be no document handling charge. However for customers opting for physical delivery of contract notes/ bills, there will be a document handling charge of Rs.50 exclusive of Goods and Services Tax. You can change your delivery mode anytime. For changing the mode of the delivery from physical copy to email, please Click here to download the application and submit it to your nearest branch.\n
+The minimum aggregate brokerage will be Rs.25 per scrip exclusive of Goods and Services Tax per day for delivery trades in cash segment, subject to regulatory caps, as applicable.\n
+Charges/service standards are subject to revision at sole discretion of India Infoline Ltd as informed by communication sent by ordinary Post / Email.\n
+
+    </string>
+
+
+    <string name="simply_save_svi_card_title">SimplySAVE SBI Credit Card</string>
+    <string name="simply_click_svi_card_title">SBI SimplyCLICK Credit Card</string>
+    <string name="shoprite_rbl_card_title">RBL Bank ShopRite Credit Card</string>
+
+
+    <string name="simply_save_svi_about_title">Privileges on SimplySAVE SBI Card
+With SimplySAVE SBI Card, you get unlimited privileges-</string>
+
+    <string-array name="simply_save_svi_about_array">
+
+        <item>Extravaganza Offer\n\n
+•	Spend Rs. 2,000 or more in first 60 days and get 2,000 bonus Reward Points </item>
+
+        <item> 10x Reward Points\n\n
+•	Enjoy 10 Reward Points per Rs 100 spent on Dining, Movies, Departmental Stores and Grocery Spends.\n
+•	On all your other spends, earn 1 Reward Point per Rs 100 spent
+(4 Reward Points = Rs. 1)\n
+</item>
+
+        <item> Enjoy Complete Fuel Freedom\n\n
+•	Get freedom from paying the 1% fuel surcharge at any petrol pump\n
+•	Transact an amount between Rs. 500 to Rs. 3,000 at any petrol pump in India to avail this offer</item>
+
+        <item>Spend Based Reversal\n\n
+•	Get annual membership fee reversal from second year of your subscription\n
+•	To avail fee reversal, you need to have spent Rs. 1,00,000 or more on your SimplySAVE SBI Card in the previous year </item>
+
+
+    </string-array>
+
+
+    <string-array name="simply_save_features_array">
+
+        <item>Reward Point\n\n
+•	Earn 1 Reward Point on every Rs. 100 that you spend using the SimplySAVE SBI Card.\n
+•	Use your Reward Points to pay the outstanding balance on your credit card or redeem against a wide array of gifts.</item>
+
+        <item>Welcome Offer\n\n
+•	Get Rs. 100 cash back on your first ATM cash withdrawal, if done within 30 days of receiving your card</item>
+
+        <item>Contactless Advantage\n\n
+•	Daily purchases now made easy with SimplySAVE SBI Card. Simply wave your card at a secure reader to transact.\n
+•	Fast &amp; convenient: No need to hand over your card or look for cash /coins for everyday small ticket purchases.\n
+•	Security:  The card never leaves your hand during a Contactless transaction, significantly reducing the risk of card loss and fraud due to skimming (counterfeit). Even if the card is waved multiple times at the reader, the unique security key feature of Visa payWave will ensure that only one transaction goes through, thus making it more secure.\n
+</item>
+
+        <item>Worldwide Acceptance\n\n
+•	You can use your SimplySAVE SBI Card in over 24 million outlets across the globe, including 3,25,000 outlets in India.\n
+•	Use your card to make payments at any outlet that accepts Visa or MasterCard</item>
+
+        <item>Add-on Cards\n\n
+•	With SimplySAVE SBI Card, you can empower your family with add-on cards for your parents, spouse, children or siblings above the age of 18</item>
+
+        <item>Cash on the Go\n\n
+•	Withdraw cash from over 1 million Visa or MasterCard ATMs across the globe.</item>
+
+        <item>Utility Bill Payment Facility\n\n
+•	Pay your electricity, telephone, mobile and other utility bills using the Easy Bill Pay facility on your SimplySAVE SBI Card.</item>
+
+        <item>Balance Transfer on EMI\n\n
+•	Save money while paying your credit card dues.\n
+•	Transfer the outstanding balance of other banks’ credit cards to your SimplySAVE SBI Card, and avail a lower rate of interest and pay back in EMIs.</item>
+
+        <item>Flexipay\n\n
+•	With Flexipay, convert your transactions in easy monthly installments. Make any purchase for Rs. 2,500 or more using your SimplySAVE SBI Card , and log in with your username and password to sbicard.com within 30 days of purchase to convert it into Flexipay
+Easy Money.\n
+•	With Easy Money, you can get a draft or cheque against your cash limit and get it delivered to your doorstep.</item>
+
+    </string-array>
+
+
+    <string-array name="simply_save_charge_array">
+
+        <item>First Year Fee (one-time):\n\n Rs. 499.</item>
+
+        <item>Renewal Fee (per annum):\n\n Rs. 499 from second year onwards. Renewal Fee reversed if annual spends for last year >= Rs. 1,00,000.</item>
+
+        <item>Add-on Fee (per annum):\n\n Nil</item>
+
+        <item>Extended Credit</item>
+
+        <item>Interest free credit period:\n\n 20–50 days, applicable only on retail purchases and if previous months\’ outstanding balance is paid.</item>
+
+        <item>Finance charges:\n\n Upto Rs.25 or 3.35% per month (40.2% per annum) whichever is higher, from the date of transaction.</item>
+
+        <item>Minimum amount due:\n\n 5% of Total Outstanding (Min. Rs. 200 + all applicable taxes + EMI ( In case of EMI based product) + OVL amount (if any).</item>
+
+        <item>Cash Advance\n\n
+•	Cash Advance Limit: Up to 80% of credit limit, with a maximum of Rs. 12,000 per day</item>
+
+        <item>Free Credit Period:\n\n Nil</item>
+
+        <item>Finance charges:\n\n Upto Rs.25 or 3.35% per month (40.2% per annum) whichever is higher, from the date of withdrawal</item>
+
+        <item>International ATMs:\n\n 2.5% of transaction amount, subject to a minimum of Rs. 500.</item>
+
+        <item>Other Charges:\n\n
+•	Cheque Payment Fee: Rs. 100. \n
+•	Payment Dishonor fee: 2% of the payment amount, subject to a minimum of Rs. 500.\n
+•	Statement retrieval: Rs. 100 per statement, which is two or more months old</item>
+
+        <item>Late payment:
+	NIL for Total Amount due from Rs.0-Rs.500;
+	Rs. 400 for Total Amount due greater than Rs. 500 &amp; up to Rs. 1000.
+	Rs. 750 for Total Amount due greater than Rs. 1000 &amp; up to Rs. 10,000.
+	Rs. 950 for Total Amount due greater than Rs. 10,000.</item>
+
+        <item>Overlimit:\n\n 2.5% of overlimit amount subject to a minimum of Rs. 500</item>
+
+        <item>Card replacement:\n\n Rs. 100</item>
+
+        <item>Emergency card replacement, when abroad:\n\n Actual cost, with a minimum of $175.</item>
+
+        <item>Foreign currency transaction:\n\n Conversion mark up - 3.5%.</item>
+
+        <item>Dynamic Currency Conversion: Markup Fee:\n\n 3.50% (For All Cards Except Elite) 1.99%(For Elite Cardholders Only) (Only for transactions greater than or equal to Rs. 1,000).</item>
+
+        <item>Rewards redemption fee:\n\n Rs. 99.</item>
+
+        <item>Priority Pass Lounge Charges :\n\n All Airport Lounge visits within India through the Priority Pass Program will be charged with an 19 usage fee of $27 per visit + applicable taxes. All Airport Lounge visits outside India through the Priority Pass Program, after exhausting the complimentary visits, will be charged with an usage fee of $27 per visit + applicable taxes. For more details, please visit sbicard.com All guests being accompanied by the SBI Cardholder having the Priority Pass, to visit the Airport Lounge will be charged with an usage fee of $27 per visit + applicable taxes.</item>
+
+        <item>Cash Payment fee:\n\n Rs. 199.</item>
+
+        <item>Surcharge\n\n
+•	Railway tickets through Railway counters: Rs. 30 + 2.5% of transaction amount
+•	Railway tickets through irctc.co.in : 1.8% of transaction amount + service charge, as applicable</item>
+
+        <item>Fuel and all products and services sold at petrol pumps:\n\n 1% fuel surcharge waiver for each transaction between Rs. 500 and Rs. 3,000, exclusive of applicable taxes, wherever applicable and all other charges. Maximum surcharge waiver of Rs. 100 per statement cycle, per credit card account.
+1% of transaction amount for transaction Amount Betweeen Rs. 500 to Rs. 3,000.</item>
+
+        <item>Order of Payment Settlement:\n\n
+All payments made for a cardholder account will be settled in the order of Minimum Amount Due (which is inclusive of all applicable taxes + EMI on EMI based products + 5% of Total Outstanding), Fees &amp; Other Charges, and Interest charges, Balance Transfer Outstanding, Purchase Outstanding and Cash Advance.</item>
+
+        <item>Things to know\n\n
+•	Cheques payable outside clearing the zones are not accepted. We accept payment through local cheques or drafts payable in Delhi only.
+•	All taxes would be charged as applicable on all the above Fees, Interest &amp; Charges.</item>
+
+    </string-array>
+
+
+    <string name="credit_card_docs_req_about">
+        Documents required to apply for Credit Card\n\n
+The documents required to apply for credit card vary for each customer.\n
+Below is an indicative list of documents required for any credit card application:\n
+    </string>
+
+    <string-array name="credit_card_doc_req_array">
+
+        <item>Identity proof</item>
+
+        <item>Address proof</item>
+
+        <item>PAN card</item>
+
+        <item>Passport size photograph</item>
+
+        <item>Income proof document</item>
+
+        <item>Bank statement</item>
+
+    </string-array>
+
+
+    <string-array name="simply_click_about_array">
+
+        <item>Log-in Gift\n\n
+•	Get Amazon.in gift card worth Rs.500* on joining.</item>
+
+        <item>e-Shopping Rewards\n\n
+•	Earn 10X Reward Points on online spends with exclusive partners - Amazon / BookMyShow / Cleartrip / Lenskart / Netmeds / UrbanClap.\n
+•	Earn 5X rewards on all other online spends.</item>
+
+        <item>Milestone Rewards\n\n
+•	e-voucher worth Rs.2,000 on annual online spends of Rs.1 Lakh.\n
+•	e-voucher worth Rs.2,000 on annual online spends of Rs.2 Lakhs.</item>
+
+        <item>Enjoy Complete Fuel Freedom\n\n
+•	1% fuel surcharge waiver for each transaction between Rs 500 &amp; Rs 3000 (exclusive of GST, wherever applicable, &amp; all other charges).</item>
+
+        <item>Annual Fee Reversal\n\n
+•	Spend Rs 1,00,000 and get annual fee of Rs 499 reversed for your SimplyCLICK SBI card in the subsequent year.</item>
+
+        <item>Contactless Technology\n\n
+•	Simply wave your card at a secured reader and your transaction is done.</item>
+
+    </string-array>
+
+
+    <string-array name="simply_click_features_array">
+
+        <item>Contactless Advantage\n\n
+•	Daily purchases now made easy with SimplyCLICK SBI Card. Simply wave your card at a secure reader to transact.</item>
+
+        <item>Fast &amp; convenient:\n\n
+            No need to hand over your card or look for cash /coins for everyday small ticket purchase</item>
+
+        <item>Security:\n\n
+            The card never leaves your hand during a Contactless transaction, significantly reducing the risk of card loss and fraud due to skimming (counterfeit). Even if the card is waved multiple times at the reader, the unique security key feature of Visa payWave will ensure that only one transaction goes through, thus making it more secure.</item>
+
+        <item> Worldwide Acceptance\n\n
+	You can use your SimplyCLICK SBI Card in over 24 million outlets across the globe, including 3,25,000 outlets in India.\n
+            Use your card to make payments at any outlet that accepts Visa or MasterCard\n</item>
+
+        <item>Add-on Cards\n\n
+	With SimplyCLICK SBI Card, you can empower your family with add-on cards for your parents, spouse, children or siblings above the age of 18.</item>
+
+        <item>Cash on the Go\n\n
+	Withdraw cash from over 1 million Visa or MasterCard ATMs across the globe.</item>
+
+        <item>Utility Bill Payment Facility\n\n
+	Pay your electricity, telephone, mobile and other utility bills using the Easy Bill Pay facility on your SimplyCLICK SBI Card.</item>
+
+        <item>Balance Transfer on EMI\n\n
+•	Save money while paying your credit card dues.\n
+•	Transfer the outstanding balance of other banks\’ credit cards to your SimplyCLICK SBI Card, and avail a lower rate of interest and pay back in EMIs.</item>
+
+        <item>Flexipay\n\n
+•	With Flexipay, convert your transactions in easy monthly installments. Make any purchase for Rs. 2,500 or more using your SimplyCLICK SBI Card , and log in with your username and password to sbicard.com within 30 days of purchase to convert it into Flexipay.</item>
+
+        <item>Easy Money\n\n
+•	With Easy Money, you can get a draft or cheque against your cash limit and get it delivered to your doorstep.\n
+•	Log in with your username and password to sbicard.com to book Easy Money.</item>
+
+    </string-array>
+
+
+    <string-array name="simply_click_charges_array">
+
+        <item>Annual Fee (one time): Rs. 499</item>
+
+        <item>Renewal Fee (per annum): Rs. 499 from second year onwards. Renewal Fee reversed if annual spends for last year >= Rs.1,00,000</item>
+
+        <item>Add-on Fee (per annum): Nil</item>
+
+        <item>Extended Credit</item>
+
+        <item>Interest free credit period: 20–50 days (applicable only on retail purchases and if previous months’ outstanding balance is paid).</item>
+
+        <item>Finance charges: Upto Rs.25 or 3.35% per month (40.2% per annum) whichever is higher, from the date of transaction.</item>
+
+        <item>Minimum amount due: 5% of Total Outstanding (Min. Rs. 200) + all applicable taxes + EMI (in case of EMI based products)+OVL amount (if any).</item>
+
+        <item>Cash Advance\n\n
+•	Cash Advance Limit: Up to 80% of credit limit, with a maximum of Rs. 12,000 per day.</item>
+
+        <item>Free Credit Period: Nil\n\n
+•	Finance charges: Upto Rs.25 or 3.35% per month (40.2% per annum) whichever is higher, from the date of withdrawal.</item>
+
+        <item>Finance charges: Upto Rs.25 or 3.35% per month (40.2% per annum) whichever is higher, from the date of withdrawal.</item>
+
+        <item>Cash Advance Fee\n\n
+•	SBI and other domestic ATMs: 2.5% of withdrawal or Rs. 500, whichever is higher, per transaction.</item>
+
+        <item>International ATMs: 2.5% of withdrawal amount or Rs. 500, whichever is higher, per transaction.</item>
+
+        <item>Other Charges\n\n
+•	Cheque Fee: Rs. 100.</item>
+
+        <item>Payment Dishonor fee: 2% of the payment amount, subject to a minimum of Rs. 500.</item>
+
+        <item>Statement retrieval: Rs. 100 per statement, which is two or more months old.</item>
+
+        <item>Late payment:\n\n
+	NIL for Total Amount due from Rs.0-Rs.500,\n
+	Rs. 400 for Total Amount due greater than Rs. 500 &amp; up to Rs. 1000,\n
+	Rs. 750 for Total Amount due greater than Rs. 1000 &amp; up to Rs. 10,000,\n
+	Rs. 950 for Total Amount due greater than Rs. 10,000.</item>
+
+        <item>Overlimit: 2.5% of overlimit amount subject to a minimum of Rs. 500.</item>
+
+        <item>Card replacement: Rs. 100\n\n
+•	Emergency card replacement, when abroad: Actual cost, with a minimum of $175.</item>
+
+        <item>Foreign currency transaction: Conversion mark up - 3.5%.</item>
+
+        <item>Dynamic Currency Conversion: Markup Fee: 3.50% (For All Cards Except Elite) 1.99%(For Elite Cardholders Only) (Only for transactions greater than or equal to Rs. 1,000).</item>
+
+        <item>Cash Payment fee: Rs. 199.</item>
+
+        <item>Surcharge\n\n
+•	Railway tickets through Railway counters: Rs. 30 + 2.5% of transaction amount.\n
+•	Railway tickets through irctc.co.in : 1.8% of transaction amount + service charge, as applicable.</item>
+
+        <item>Fuel and all products and services sold at petrol pumps: 1% fuel surcharge waiver for each transaction between Rs. 500 and Rs. 3,000, exclusive of all applicable taxes, wherever applicable and all other charges. Maximum surcharge waiver of Rs. 100 per statement cycle, per credit card account.</item>
+
+        <item>1% of transaction amount for transaction Amount Betweeen Rs. 500 to Rs. 3,000.</item>
+
+        <item>Order of Payment Settlement\n\n
+All payments made for a cardholder account will be settled in the order of Minimum Amount Due (which is inclusive of all applicable taxes + EMI on EMI based products + 5% of Total Outstanding), Fees &amp; Other Charges, Interest charges, Balance Transfer Outstanding, Purchase Outstanding and Cash Advance.</item>
+
+        <item>Things to know\n\n
+•	Cheques payable outside clearing the zones are not accepted. We accept payment through local cheques or drafts payable in Delhi only.\n
+•	All taxes would be charged as applicable on all the above Fees, Interest &amp; Charges.\n
+Your continued use of the card will be deemed acceptance of these amendments.</item>
+
+        <item>For assistance, please call SBI Card helpline at:\n\n
+Dial 39 02 02 02 (prefix local STD code) or 1860 180 1290\n
+All information in this communication is correct as per July 2018 and is subject to change at the discretion of SBICPSL. SBI Card Most Important Terms and Conditions are also available at www.sbicard.com</item>
+
+    </string-array>
+
+
+    <string-array name="shop_rbl_about_array">
+
+        <item>Welcome Benefit\n\n
+On paying the joining fee of this card, you can earn 2,000 reward points as a welcome gift.</item>
+
+        <item>Reward Points\n\n
+Earn 1 Reward Point for every Rs.100 spent on all the purchases apart from fuel.</item>
+
+        <item>Value Back\n\n
+The cardholder can earn 20 reward points for every Rs.100 spent on the grocery shopping and 5% value back\n
+•	Earn 1 Reward Point for every ₹100 spent on all your purchases except fuel*\n
+•	10% discount on Movies, 15 times in an year up to ₹ 100 in each transaction*\n
+•	2.5% value back (20 Reward Points for every ₹ 100) on fuel up to 1000 points each month Fuel surcharge waiver of up to ₹ 100*\n
+•	₹100 = 1 Reward Point (except fuel)\n
+•	₹100 = 20 Reward Points on groceries\n
+•	₹100 = 20 Reward Points on fuel.</item>
+
+    </string-array>
+
+
+    <string-array name="shop_rbl_charges_array">
+
+        <item>Annual or renewal Fee:	Rs. 500</item>
+
+        <item>Add-on Fee (per annum):	Nil</item>
+
+        <item>Card Replacement:	Nil</item>
+
+        <item>Cash Advance (ATM withdrawals):	2.5% (min Rs.500) of the cash amount</item>
+
+        <item>Overlimit Charges:	Rs. 600</item>
+
+        <item>Late Payment Fee:  	15% of total amount due (Min Rs. 50 and Max Rs. 1,250)</item>
+
+        <item>Surcharges:	IRCTC Service Charges + Payment</item>
+
+        <item>Gateway transaction charges:   (up to 1.8% of ticket amount + IRCTC service charges)</item>
+
+        <item>Goods and Services Tax (GST): 	GST of 18% is levied on all services</item>
+
+    </string-array>
+
+
+    <string-array name="shop_rbl_features_array">
+       <item>Welcome Rewards\n\n
+        ShopRite Credit Card journey starts with 2,000 Reward Points.</item>
+
+        <item>Simple steps to get your welcome gift :\n\n
+        •	Pay the Joining Fee levied in your first statement by payment due date\n
+        •	Make a purchase within 30 days of card issuance\n
+        •	Download RBL MyCard Mobile App</item>
+
+        <item>Rewards on all purchases\n\n
+            •	Earn 1 Reward Point for every Rs.100 spent on all your purchases except fuel</item>
+
+        <item>5% Value back on grocery spends\n\n
+        •	Earn 20 Reward Points for every Rs.100 when you use your card for grocery shopping\n
+        •	Maximum 1000 Reward Points in a month.</item>
+
+        <item>10% discount on movies\n\n
+        •	Get 10% discount (up to Rs. 100) on movie tickets at BookMyShow 15 times in a year\n
+        •	You can avail the offer by Selecting RBL Bank 10% Offer under Credit Card offers and discounts post movie selection on BookMyShow</item>
+
+        <item>2.5% Value back on fuel spends\n\n
+        •	Earn 10 Reward Points for every Rs.100 when you use your card for fuel\n
+        •	Maximum 1000 Reward Points in a month\n
+        •	Tank up with Shoprite Credit Card with waiver of fuel surcharge at all fuel stations*\n
+        •	*Valid for fuel transactions between Rs. 500 and Rs. 4000. Maximum waiver of Rs. 100 per month.\n
+        •	Annual fee Rs. 500\n
+        •	Fee reversed on spends of Rs. 1 Lac in the previous year</item>
+
+    </string-array>
+
+
+    <string name="refer_tab_title">+Refer</string>
+    <string name="rewards_tab_title">Referrals</string>
+    <string name="knowmore_tab_title">Know More</string>
+
+    <string name="disclaimer_tab_title">Disclaimer</string>
+    <string name="privacy_policy_tab_title">Privacy POlicy</string>
+    <string name="data_policy_tab_title">Data Policy</string>
+    <string name="terms_use_tab_title">Terms of Use</string>
+
+
+    <string name="data_policy_string">
+
+        <font color="blue"><center margin="auto" width="100%">YeLo Finance InfoTech APP</center></font>\n\n\n
+This policy describes the information we process to support YeLo Finance InfoTech, YeLo Finance InfoTech, Messenger and other products and features offered by YeLo Finance InfoTech (YeLo Finance InfoTech Products or Products). You can find additional tools and information in the YeLo Finance InfoTech Settings\n\n
+        <font color="blue">I. What kinds of information do we collect?</font>\n\n
+To provide the YeLo Finance InfoTech Products, we must process information about you. The types of information we collect depend on how you use our Products. \n\n
+        <font color="orange">Things you and others do and provide.</font>\n\n
+•	Information and services you provide. We collect the services, communications and other information you provide when you use our Products, including when you sign up for an account, create or share services, and message or communicate with others. This can include information in or about the services you provide (like metadata), such as the location of a photo or the date a file was created. It can also include what you see through features we provide, such as our location based services, so we can offer you services based on your PIN Codes.\n\n
+•	Data with special protections: To avail YeLo Finance InfoTech services, we consider some of the below mentioned including User sensitive information essential. Please note that we will never force you to enter information unless and until required by the service itself. You can abort use of such services at any time. Also, once you enter such information, we secure it with AES 256-bit Encryption. We provide adequate security and limit access to only operating and QA personnel at our server’s centers in India.\n\n
+•	We collect following but not limited to User data points as follows:\n\n
+o	Full Name\n
+o	Mobile Number\n
+o	Email address\n
+o	Addresses (including but not limited to Residential, Rental and Office Address)\n
+o	Employment details and Account Information\n
+o	PAN card details, Address Proof details\n\n
+        <font color="orange">All this information is necessary to apply for our services and we protect them in secure services with highest level of encryptions, with security available 24 x 7 throughout the year.</font>\n\n
+•	Networks and connections. We collect information about the people, Product pages and accounts you are connected to and how you interact with them across our Products, such as people you communicate with the most or groups you are part of. We also collect contact information by choosing (such as an address book or call log history), which we use for things like helping you and others find people you may know and for the sharing purposes only.\n\n
+•	Your usage. We collect information about how you use our Products, such as the types of services you view or engage with; the features you use; the actions you take; the people or accounts you interact with; and the time, frequency and duration of your activities. For example, we log when you\'re using and have last used our Products, and what posts, videos and other services you view on our Products. We also collect information about how you use features like our camera.\n\n
+•	Information about transactions made on our Products. If you use our Products for purchases or other financial transactions we collect information about the purchase or transaction. This includes payment information, such as your credit or debit card number and other card information; other account and authentication information; and billing, shipping and contact details.\n\n
+•	Things others do and information they provide about you. We also receive and analyze services, communications and information that other people provide when they use our Products. This can include information about you, such as when others share or comment on a photo of you, send a message to you, or upload, sync or import your contact information.\n\n
+Device Information\n\n
+As described below, we collect information from and about the computers, phones, connected TVs and other web-connected devices you use that integrate with our Products, and we combine this information across different devices you use. For example, we use information collected about your use of our Products on your phone to better personalize the services (including ads) or features you see when you use our Products on another device, such as your laptop or tablet, or to measure whether you took an action in response to an ad we showed you on your phone on a different device.\n\n
+        <font color="orange">Information we obtain from these devices includes:</font>\n\n
+        •	<font color="purple">Device attributes:</font> information such as the operating system, hardware and software versions, battery level, signal strength, available storage space, browser type, app and file names and types, and plugins.\n\n
+        •	<font color="purple">Device operations:</font> information about operations and behaviors performed on the device, such as whether a window is foregrounded or backgrounded, or mouse movements (which can help distinguish humans from bots).\n\n
+        •	<font color="purple">Identifiers:</font> unique identifiers, device IDs, and other identifiers, such as from games, apps or accounts you use, and Family Device IDs (or other identifiers unique to YeLo Finance InfoTech Company Products associated with the same device or account).\n\n
+        •	<font color="purple">Device signals:</font> Bluetooth signals, and information about nearby Wi-Fi access points, beacons, and cell towers.\n\n
+        •	<font color="purple">Data from device settings:</font> information you allow us to receive through device settings you turn on, such as access to your GPS location, camera or photos.\n\n
+        •	<font color="purple">Network and connections:</font> information such as the name of your mobile operator or ISP, language, time zone, mobile phone number, IP address, connection speed and, in some cases, information about other devices that are nearby or on your network, so we can do things like help you stream a video from your phone to your TV.\n\n
+        •	<font color="purple">Cookie data:</font> data from cookies stored on your device, including cookie IDs and settings. Learn more about how we use cookies in the \n\n
+Information from partners.\n\n
+Advertisers, app developers, and publishers can send us information through YeLo Finance InfoTech Business Tools they use, including our social plug-ins (such as the Like button), YeLo Finance InfoTech Login, our APIs and SDKs, or the YeLo Finance InfoTech pixel. These partners provide information about your activities off YeLo Finance InfoTech—including information about your device, websites you visit, purchases you make, the ads you see, and how you use their services—whether or not you have a YeLo Finance InfoTech account or are logged into YeLo Finance InfoTech. For example, a game developer could use our API to tell us what games you play, or a business could tell us about a purchase you made in its store. We also receive information about your online and offline actions and purchases from third-party data providers who have the rights to provide us with your information.\n\n
+Partners receive your data when you visit or use their services or through third parties they work with. We require each of these partners to have lawful rights to collect, use and share your data before providing any data to us.\n\n
+        <font color="blue">II. How do we use this information?</font>\n\n
+We use the information we have (subject to choices you make) as described below and to provide and support the YeLo Finance InfoTech Products and related services described in the YeLo Finance InfoTech Terms. Here\'s how:\n\n
+Provide, personalize and improve our Products.\n\n
+We use the information we have to deliver our Products, including to personalize features and services (including your News Feed, YeLo Finance InfoTech Blog Feed, YeLo Finance InfoTech ads) and make suggestions for you on and off our Products. To create personalized Products that are unique and relevant to you, we use your connections, preferences, interests and activities based on the data we collect and learn from you and others (including any data with special protections you choose to provide); how you use and interact with our Products; and the people, places, or things you\'re connected to and interested in on and off our Products.\n\n
+        •	<font color="purple">Information across YeLo Finance InfoTech Products and devices:</font> We connect information about your activities on different YeLo Finance InfoTech Products and devices to provide a more tailored and consistent experience on all YeLo Finance InfoTech Products you use, wherever you use them. For example, we can suggest that you join a group on YeLo Finance InfoTech that includes people you follow on YeLo Finance InfoTech or communicate with using Messenger. We can also make your experience more seamless, for example, by automatically filling in your registration information (such as your phone number) from one YeLo Finance InfoTech Product when you sign up for an account on a different Product.\n\n
+        •	<font color="purple">Location-related information:</font> We use location-related information-such as your current location, where you live, the places you like to go, and the businesses and people you\'re near-to provide, personalize and improve our Products, including ads, for you and others. Location-related information can be based on things like precise device location (if you\'ve allowed us to collect it), IP addresses, and information from your and others\' use of YeLo Finance InfoTech Products (such as check-ins or events you attend).\n\n
+        •	<font color="purple">Product research and development:</font> We use the information we have to develop, test and improve our Products, including by conducting surveys and research, and testing and troubleshooting new products and features.\n\n
+        •	<font color="purple">Ads and other sponsored services:</font> We use the information we have about you-including information about your interests, actions and connections-to select and personalize ads, offers and other sponsored services that we show you. \n\n
+        •	<font color="purple">Analytics:</font> We also keep a record of your usage history like Clicks on different Events to improve your experiences better with us. We maintain analytics data through our API services <a href="stat.tazza.co">stat.tazza.co</a> and <a href="api.yelonow.com">api.yelonow.com</a> .\n\n
+Provide measurement, analytics, and other business services.\n\n
+We use the information we have (including your activity off our Products, such as the websites you visit and ads you see) to help advertisers and other partners measure the effectiveness and distribution of their ads and services, and understand the types of people who use their services and how people interact with their websites, apps, and services.\n\n
+Promote safety, integrity and security.\n\n
+We use the information we have to verify accounts and activity, combat harmful conduct, detect and prevent spam and other bad experiences, maintain the integrity of our Products, and promote safety and security on and off of YeLo Finance InfoTech Products. For example, we use data we have to investigate suspicious activity or violations of our terms or policies, or to detect when someone needs help. \n\n
+Communicate with you.\n\n
+We use the information we have to send you marketing communications, communicate with you about our Products, and let you know about our policies and terms. We also use your information to respond to you when you contact us.\n\n
+Research and innovate for social good.\n\n
+We use the information we have (including from research partners we collaborate with) to conduct and support research and innovation on topics of general social welfare, technological advancement, public interest, health and well-being. \n\n
+        <font color="blue">III. How is this information shared?</font>/\n\n
+Your information is shared with others in the following ways:\n\n
+Sharing on YeLo Finance InfoTech Products\n\n
+We collect and use your data as mentioned earlier via "api.yelonow.com"\n\n
+When you choose to use third-party apps, websites, or other services that use, or are integrated with, our Products, they can receive information about what you post or share. For example, when you play a game with your YeLo Finance InfoTech friends or use a YeLo Finance InfoTech Comment or Share button on a website, the game developer or website can receive information about your activities in the game or receive a comment or link that you share from the website on YeLo Finance InfoTech. Also, when you download or use such third-party services, they can access your public profile on YeLo Finance InfoTech, and any information that you share with them. Apps and websites, you use may receive your list of YeLo Finance InfoTech friends if you choose to share it with them. But apps and websites you use will not be able to receive any other information about your YeLo Finance InfoTech friends from you, or information about any of your YeLo Finance InfoTech followers (although your friends and followers may, of course, choose to share this information themselves). Information collected by these third-party services is subject to their own terms and policies, not this one.\n\n
+Devices and operating systems providing native versions of YeLo Finance InfoTech and YeLo Finance InfoTech (i.e. where we have not developed our own first-party apps) will have access to all information you choose to share with them, including information your friends share with you, so they can provide our core functionality to you.\n\n
+Note: We are in the process of restricting developers’ data access even further to help prevent abuse. For example, we will remove developers\' access to your YeLo Finance InfoTech and YeLo Finance InfoTech data if you haven\'t used their app in 3 months, and we are changing Login, so that in the next version, we will reduce the data that an app can request without app review to include only name, YeLo Finance InfoTech username and bio, profile photo and email address. Requesting any other data will require our approval.\n\n
+New owner.\n\n
+If the ownership or control of all or part of our Products or their assets changes, we may transfer your information to the new owner.\n\n
+Sharing with Third-Party Partners\n\n
+We work with third-party partners who help us provide and improve our Products or who use YeLo Finance InfoTech Business Tools to grow their businesses, which makes it possible to operate our companies and provide free services to people around the world. We don\'t sell any of your information to anyone, and we never will. We also impose strict restrictions on how our partners can use and disclose the data we provide. Here are the types of third parties we share information with:\n\n
+Partners who use our analytics services.\n\n
+We provide aggregated statistics and insights that help people and businesses understand how people are engaging with their posts, listings, Product pages, videos and other services on and off the YeLo Finance InfoTech Products. For example, Page admins and YeLo Finance InfoTech business profiles receive information about the number of people or accounts who viewed, reacted to, or commented on their posts, as well as aggregate demographic and other information that helps them understand interactions with their Page or account.\n\n
+Advertisers.\n\n
+We provide advertisers with reports about the kinds of people seeing their ads and how their ads are performing, but we don\'t share information that personally identifies you (information such as your name or email address that by itself can be used to contact you or identifies who you are) unless you give us permission. For example, we provide general demographic and interest information to advertisers (for example, that an ad was seen by a woman between the ages of 25 and 34 who lives in India and likes software engineering) to help them better understand their audience. We also confirm which YeLo Finance InfoTech ads led you to make a purchase or take an action with an advertiser.\n\n
+Measurement partners.\n\n
+We share information about you with companies that aggregate it to provide analytics and measurement reports to our partners.\n\n
+Partners offering goods and services in our Products.\n\n
+When you subscribe to receive premium services, or buy something from a seller in our Products, the services creator or seller can receive your public information and other information you share with them, as well as the information needed to complete the transaction, including shipping and contact details.\n\n
+Vendors and service providers.\n\n
+We provide information and services to vendors and service providers who support our business, such as by providing technical infrastructure services, analyzing how our Products are used, providing customer service, facilitating payments or conducting surveys.\n\n
+Researchers and academics.\n\n
+We also provide information and services to research partners and academics to conduct research that advances scholarship and innovation that support our business or mission, and enhances discovery and innovation on topics of general social welfare, technological advancement, public interest, health and well-being.\n\n
+Law enforcement or legal requests.\n\n
+We share information with law enforcement or in response to legal requests in the circumstances outlined below.\n
+Learn more about how you can control the information about you that you or others share with third-party partners in the FAQs section in the products settings.\n\n
+        <font color="blue">IV. How do the YeLo Finance InfoTech and 3rd Party Service Providers work together?</font>\n\n
+YeLo Finance InfoTech share infrastructure, systems and technology with other 3rd party services provider to provide an innovative, relevant, consistent and safe experience across all YeLo Finance InfoTech Company Products you use. We also process information about you across the YeLo Finance InfoTech Companies for these purposes, as permitted by applicable law and in accordance with their terms and policies.\n\n
+        <font color="blue">V. How can I manage or delete information about me?</font>\n\n
+
+Since, we are working with Third party service providers to provide you best products, we can help you delete the information you have submitted to us. Please send us an email with your Full Name, Registered Email ID and registered Mobile no. to contact@yelonow.com \n\n
+        <font color="blue">VI. How do we respond to legal requests or prevent harm?</font>\n\n
+We access, preserve and share your information with regulators, law enforcement or others:\n\n
+•	In response to a legal request (like a search warrant, court order or subpoena) if we have a good faith belief that the law requires us to do so. \n\n
+•	When we have a good-faith belief it is necessary to: detect, prevent and address fraud, unauthorized use of the Products, violations of our terms or policies, or other harmful or illegal activity; to protect ourselves (including our rights, property or Products), you or others, including as part of investigations or regulatory inquiries; or to prevent death or imminent bodily harm. For example, if relevant, we provide information to and receive information from third-party partners about the reliability of your account to prevent fraud, abuse and other harmful activity on and off our Products.\n\n
+Information we receive about you (including financial transaction data related to purchases made with YeLo Finance InfoTech) can be accessed and preserved for an extended period when it is the subject of a legal request or obligation, governmental investigation, or investigations of possible violations of our terms or policies, or otherwise to prevent harm. We also retain information from accounts disabled for terms violations for at least a year to prevent repeat abuse or other term violations.\n\n
+        <font color="blue">VII. How do we operate and transfer data as part of our global services?</font>\n\n
+We share information globally, both internally within the YeLo Finance InfoTech Companies, and externally with our partners and with those you connect and share with around the world in accordance with this policy. Your information may, for example, be transferred or transmitted to, or stored and processed in the United States or other countries outside of where you live for the purposes as described in this policy. These data transfers are necessary to provide the services set forth in the YeLo Finance InfoTech Terms and YeLo Finance InfoTech Terms and to globally operate and provide our Products to you. We utilize standard contract clauses, rely on the European Commission\'s adequacy decisions about certain countries, as applicable, and obtain your consent for these data transfers to the United States and other countries.\n\n
+        <font color="blue">VIII. How will we notify you of changes to this policy?</font>\n\n
+We\'ll notify you before we make changes to this policy and give you the opportunity to review the revised policy before you choose to continue using our Products.\n\n
+        <font color="blue">IX. How to contact YeLo Finance InfoTech with questions</font>\n\n
+        <b>You can learn more about how privacy works on YeLo Finance InfoTech If you have questions about this policy, you can contact us on <a href="contact@yelonow.com">contact@yelonow.com</a> </b>
+
+    </string>
+
+
+    <string name="privacy_policy_string">
+
+<font color="blue"> YeLo Finance InfoTech APP</font>\n\n\n
+    <b><font color="blue"> INTRODUCTION:</font></b>\n\n
+    YeLo Finance InfoTech recognizes the importance of privacy of its users and also of maintaining confidentiality of the information provided by its users as a responsible data controller and data processer.\n\n
+    The app is a financial services aggregator platform.\n\n
+    This Privacy Policy provides for the practices for handling and securing user\'s Personal Information (defined hereunder) by YeLo Finance InfoTech and its subsidiaries and affiliates.\n\n
+    This Privacy Policy is applicable to any person (‘User’) who purchase, intend to purchase, or inquire about any product(s) or service(s) made available by YeLo Finance InfoTech through any of YeLo Finance InfoTech customer interface channels including its website, mobile site, mobile app &amp; offline channels including call centres and offices (collectively referred herein as "Sales Channels").\n\n
+    For the purpose of this Privacy Policy, wherever the context so requires "you" or "your" shall mean User and the term "we", "us", "our" shall mean YeLo Finance InfoTech. For the purpose of this Privacy Policy, Website means the website(s), mobile site(s) and mobile app(s).\n\n
+    By using or accessing the Website or other Sales Channels, the User hereby agrees with the terms of this Privacy Policy and the contents herein. If you disagree with this Privacy Policy please do not use or access our Website or other Sales Channels.\n\n
+    This Privacy Policy does not apply to any website(s), mobile sites and mobile apps of third parties, even if their websites/products are linked to our Website. User should take note that information and privacy practices of business partners, advertisers, sponsors or other sites to which provides hyperlink(s), may be materially different from this Privacy Policy. Accordingly, it is recommended that you review the privacy statements and policies of any such third parties with whom they interact.\n\n
+    This Privacy Policy is an integral part of your User Agreement with YeLo Finance InfoTech and all capitalized terms used, but not otherwise defined herein, shall have the respective meanings as ascribed to them in the User Agreement.\n\n
+<font color="blue">USERS OUTSIDE GEOGRAPHICAL LIMITS</font>\n\n\n
+    Please note that the data shared with shall be primarily processed in India and such other jurisdictions where a third party engaged by may process the data on behalf. By agreeing to this policy, you are providing YeLo\n\n
+    with your explicit consent to process your personal information for the purpose(s) defined in this policy. The data protection regulations in India or such other jurisdictions mentioned above may differ from those of your country of residence.\n\n
+    If you have any concerns in the processing your data and wish to withdraw your consent, you may do so by writing to the following email id:\n
+<a href="contact@yelonow.com"> contact@yelonow.com.</a> However, if such processing of data is essential for us to be able to provide service to you, then we may not be able to serve or confirm your enquiry after your withdrawal of consent. For instance, if you want to look for any investments abroad, then certain personal information of yours like contact details, gender, PAN Details, Income, Aadhar card Number etc. which may require specific attention or facility etc. may have to be shared by us with our third party clients. And they may further process this information. Such sharing and processing of information may extend to the state where you will apply.\n\n
+    A withdrawal of consent by you for us to process your information may:\n\n
+    •	severely inhibit our ability to serve you properly and in such case, we may have to refuse your request altogether, or\n
+    •	unreasonably restrict us to service your request which may further affect your credit rating or may compel us to cancel your request.\n\n\n
+<font color="blue">TYPES OF INFORMATION WE COLLECT AND ITS LEGAL BASIS</font>\n\n\n
+    The information as detailed below is collected for us to be able to provide the services chosen by you and also to fulfil our legal obligations as well as our obligations towards third parties as per our User Agreement.\n\n
+    "Personal Information" of User shall include the information shared by the User and collected by us for the following purposes:\n
+<font color="blue"> Registration on the Website:</font> Information which you provide while subscribing to or registering on the Website, including but not limited to information about your personal identity such as name, gender, marital status, religion, age etc., your contact details such as your email address, postal addresses, telephone (mobile or otherwise) and/or fax numbers. The information may also include information such as your banking details (including credit/debit card) and any other information relating to your income and/or lifestyle; billing information payment history etc. (as shared by you).\n
+<font color="blue"> Other information:</font> We many also collect some other information and documents including but not limited to:\n\n
+    •	Transactional history (other than banking details) about your e-commerce activities, buying behaviour.\n
+    •	Your usernames, passwords, email addresses and other security-related information used by you in relation to our Services.\n
+    •	Data either created by you or by a third party and which you wish to store on our servers such as image files, documents etc.\n
+    •	Data available in public domain or received from any third party including social media channels, including but not limited to personal or non-personal information from your linked social media channels (like name, email address, friend list, profile pictures or any other information that is permitted to be received as per your account settings) as a part of your account information.\n\n\n
+<b><font color="blue"> HOW WE USE YOUR PERSONNEL</font></b>\n\n\n
+    The Personal Information collected maybe used in the following manner:\n\n
+<font color="blue"> While making a Request or Inquiry</font>\n\n\n
+    While making a booking, we may use Personal Information including, payment details which include Customers’ name, Bank account details number (in encrypted form) with expiration date of debit card or credit card if needed, banking details, wallet details etc. as shared and allowed to be stored by you.\n\n
+<font color="blue"> We may also use your Personal Information for several reasons including but not limited to:</font>\n\n
+    •	confirm your requests with respective service providers;\n
+    •	keep you informed of the transaction status;\n
+    •	send request confirmations either via sms or Whatsapp or any other messaging service;\n
+    •	send any updates or changes to your request(s);\n
+    •	allow our customer service to contact you, if necessary;\n
+    •	customize the content of our website, mobile site and mobile app;\n
+    •	request for reviews of products or services or any other improvements;\n
+    •	send verification message(s) or email(s);\n
+    •	validate/authenticate your account and to prevent any misuse or abuse.\n
+    •	contact you on your birthday/anniversary to offer a special gift or offer.\n\n
+<font color="blue"> Surveys:</font> We value opinions and comments from our Users and frequently conduct surveys, both online and offline. Participation in these surveys is entirely optional. Typically, the information received is aggregated, and used to make improvements to Website, other Sales Channels, services and to develop appealing content, features and promotions for members based on the results of the surveys. Identity of the survey participants is anonymous unless otherwise stated in the survey.\n\n
+<font color="blue"> Marketing Promotions, Research and Programs:</font> Marketing promotions, research and programs help us to identify your preferences, develop programs and improve user experience. Personal Information collected by us for any activities may include contact information and survey questions. We use such Personal Information to notify any contest winners and survey information to develop promotions and product improvements. As a registered User, you will also occasionally receive updates from us about offers, special offers, new services by YeLo Finance InfoTech, and any other noteworthy items including marketing programs. In addition, you may look forward to receiving periodic marketing emails, newsletters and exclusive promotions offering special deals. From time to time we may add or enhance services available on the Website. To the extent these services are provided, and used by you, we will use the Personal Information you provide to facilitate the service(s) requested. For example, if you email us with a question, we will use your\n\n
+    email address, name, nature of the question, etc. to respond to your question. We may also store such Personal Information to assist us in making the Website the better and easier to use for our Users.\n\n
+    YeLo Finance InfoTech may from time to time launch programs by way of which users may stand to win any pre-approved offers related rewards or other rewards. We may use your Personal Information to enroll you in the rewards program and status of the same will be visible each time you log in to the Website. Depending on the reward program, each time you win a reward, YeLo Finance InfoTech may share your Personal Information with a third party that will be responsible for fulfilling the reward to you. You may however choose to opt out of such reward programs by writing to us OR BY JUST REJECTING OR IGNORING IT. For various purposes such as fraud detection etc., we at times may verify information of customers on selective basis, including their credit information. Additionally, YeLo Finance InfoTech may share your Personal Information, anonymized and/ or aggregated data to a third party that YeLo Finance InfoTech may engage to perform certain tasks on its behalf, including but not limited to payment processing, data hosting, data processing and assessing credit worthiness for offering credit.\n\n
+<b><font color="blue"> HOW LONG DO WE KEEP YOUR PERSONNEL</font></b>\n\n\n
+    YeLo Finance InfoTech will retain your Personal Information on its servers for as long as is reasonably necessary for the purposes listed in this policy. In some circumstances we may retain your Personal Information for longer periods of time, for instance where we are required to do so in accordance with any legal, regulatory, tax or accounting requirements.\n\n
+    Where your personal data is no longer required, we will ensure it is either securely deleted or stored in a way which means it will no longer be used by the business.\n\n
+<b><font color="blue"> COOKIES AND SESSION DATA</font></b> \n\n\n
+<font color="blue"> Cookies:</font>\n\n
+    YeLo Finance InfoTech uses cookies to personalize your experience on the Website and the advertisements that maybe displayed. YeLo Finance InfoTech use of cookies is similar to that of any other reputable online companies or Apps available in Android or IOS phones.
+    Cookies are small pieces of information that are stored by your browser on your device\'s hard drive. Cookies allow us to serve you better and more efficiently. Cookies also allow ease of access, by logging you in without having to type your login name each time (only your password is needed); we may also use such cookies to display any advertisement(s) to you while you are on the Website or to send you offers (or similar emails – provided you have not opted out of receiving such emails) focusing on destinations which may be of your interest.\n\n
+    A cookie may also be placed by our advertising servers, or third party advertising companies. Such cookies are used for purposes of tracking the effectiveness of advertising served by us on any website, and also to use aggregated statistics about your visits to the Website in order to provide advertisements in the Website or any other website about services that may be of potential interest to you. The third party advertising companies or advertisement providers may also employ technology that is used to measure the effectiveness of the advertisements. All such information is anonymous. This anonymous information is collected through the use of a pixel tag, which is\n\n
+    an industry standard technology and is used by all major websites. They may use this anonymous information about your visits to the Website in order to provide advertisements about goods and services of potential interest to you. No Personal Information is collected during this process. The information so collected during this process, is anonymous, and does not link online actions to a User.\n\n
+    Most web browsers automatically accept cookies. Of course, by changing the options on your web browser or using certain software programs, you can control how and whether cookies will be accepted by your browser. YeLo Finance InfoTech supports your right to block any unwanted Internet activity, especially that of unscrupulous websites. However, blocking YeLo Finance InfoTech cookies may disable certain features on the Website AND Mobile Application, and may hinder an otherwise seamless experience to purchase or use certain services available on the Website. Please note that it is possible to block cookie activity from certain websites while permitting cookies from websites you trust.\n\n
+<font color="blue"> Automatic Logging of Session Data:</font>\n\n
+    Each time you access the Website or Mobile application your session data gets logged. Session data may consist of various aspects like the IP address, operating system and type of browser software being used and the activities conducted by the User while on the Website. We collect session data because it helps us analyse User’s choices, browsing pattern including the frequency of visits and duration for which a User is logged on. It also helps us diagnose problems with our servers and lets us better administer our systems. The aforesaid information cannot identify any User personally. However, it may be possible to determine a User\'s Internet Service Provider (ISP), and the approximate geographic location of User\'s point of connectivity through the above session data.\n\n
+<b><font color="blue"> WITH WHOM YOUR PERSONNEL DATA IS SHARED</font></b>\n\n\n
+<font color="blue"> Service Providers and suppliers:</font>\n\n
+    Your information shall be shared with the end service providers like YeLo Finance InfoTech who are responsible for fulfilling your requests. You may note that while making a request with YeLo Finance InfoTech you authorize us to share your information with the said service providers and suppliers. It is pertinent to note that YeLo Finance InfoTech does not authorize the end service provider to use your information for any other purpose(s) except as may be for fulfilling their part of service. However, how the said service providers/suppliers use the information shared with them is beyond the purview and control of YeLo Finance InfoTech as they process Personal Information as independent data controllers, and hence we cannot be made accountable for the same. You are therefore advised to review the privacy policies of the respective service provider or supplier whose services you choose to avail.\n\n
+    YeLo Finance InfoTech does not sell or rent individual customer names or other Personal Information of Users to third parties except sharing of such information with our business / alliance partners or vendors who are engaged by us for providing various referral services and for sharing promotional and other benefits to our customers from time to time basis their request history with us.\n\n
+<b><font color="blue"> COMPANIES IN THE SAME GROUP</font></b>\n\n\n
+    In the interests of improving personalization and service efficiency, we may, under controlled and secure circumstances, share your Personal Information with our affiliate or associate entities. This will enable us to provide you with information about various products and services, both leisure- and travel-related, which might interest you; or help us address your questions and requests in relation to your bookings.\n\n
+    If the assets of YeLo Finance InfoTech are acquired, our customer information may also be transferred to the acquirer depending upon the nature of such acquisition. In addition, as part of business expansion/development/restructuring or for any other reason whatsoever, if we decide to sell/transfer/assign our business, any part thereof, any of our subsidiaries or any business units, then as part of such restructuring exercise customer information including the Personal Information collected herein shall be transferred accordingly.\n\n
+<b><font color="blue"> BUSINESS PARTNERS and THIRD-PARTY VENDORS</font></b>\n\n\n
+    We may also share certain filtered Personal Information to our corporate affiliates or business partners who may contact the customers to offer certain products or services, which may include free or paid products / services, which will enable the customer to have better travel experience or to avail certain benefits specially made for YeLo Finance InfoTech customers. Examples of such partners are entities offering co-branded credit cards, travel insurance, insurance cover against loss of wallet, banking cards or similar sensitive information etc. If you choose to avail any such services offered by our business partners, the services so availed will be governed by the privacy policy of the respective service provider.\n
+    may share your Personal Information to third party that YeLo Finance may engage to perform certain tasks on its behalf, including but not limited to paymentprocessing, data hosting, and data processing platforms.
+    We use non-identifiable Personal Information of Users in aggregate or anonymized form to build higher quality, more useful online services by performing statistical analysis of the collective characteristics and behavior of our customers and visitors, and by measuring demographics and interests regarding specific areas of the Website. We may provide anonymous statistical information based on this data to suppliers, advertisers, affiliates and other current and potential business partners. We may also use such aggregate data to inform these third parties as to the number of people who have seen and clicked on links to their websites. Any Personal Information which we collect and which we may use in an aggregated format is our property. We may use it, in our sole discretion and without any compensation to you, for any legitimate purpose including without limitation the commercial sale thereof to third parties.\n\n
+    Occasionally, YeLo Finance InfoTech will hire a third party for market research, surveys etc. and will provide information to these third parties specifically for use in connection with these projects. The information (including aggregate cookie and tracking information) we provide to such third parties, alliance partners, or vendors are protected by confidentiality agreements and such information is to be used solely for completing the specific project, and in compliance with the applicable regulations.\n\n\n
+<b><font color="blue"> DISCLOSURE OF INFORMATION</font></b>\n\n\n
+    In addition to the circumstances described above, YeLo Finance InfoTech may disclose User\'s Personal Information if required to do so:\n\n
+    •	by law, required by any enforcement authority for investigation, by court order or in reference to any legal process;\n
+    •	to conduct our business;\n
+    •	for regulatory, internal compliance and audit exercise(s)\n
+    •	to secure our systems; or to enforce or protect our rights or properties of YeLo Finance InfoTech or any or all of its affiliates, associates, employees, directors or officers or when we have reason to believe that disclosing Personal Information of User(s) is necessary to identify, contact or bring legal action against someone who may be causing interference with our rights or properties, whether intentionally or otherwise, or when anyone else could be harmed by such activities. Such disclosure and storage may take place without your knowledge. In that case, we shall not be liable to you or any third party for any damages howsoever arising from such disclosure and storage.\n\n\n
+<b><font color="blue"> USER GENERATED CONTENT:</font></b>\n\n\n
+    YeLo Finance InfoTech provides an option to its users to post their experiences by way of reviews, ratings and general poll questions. The customers also have an option of posting questions w.r.t a service offered by YeLo Finance InfoTech or post answers to questions raised by other users. These can be reviewed at the Mobile Application stores available at respective Android and IOS phones. may also hire a third party to contact you and gather feedback about your recent request with . Though the participation in the feedback process is purely optional, you may still receive emails, notifications (app, sms, Whatsapp or any other messaging service) for you to share your review(s), answer questions posted by other users or a. The reviews may be written or in a video format. The reviews written or posted may also be visible on other travel or travel related platforms. The UGC that YeLo Finance InfoTech collects may be of the following kinds:\n\n
+    •	Review and Ratings\n
+    •	Question and Answers\n
+    •	Crowd Source Data Collection (poll questions).\n\n
+    Each User who posts review or ratings, Q&amp;A, photographs shall have a profile, which other Users will be able to access. Other Users may be able to view the number of trips, reviews written, questions asked and answered and photographs posted.\n\n
+<b><font color="blue"> HOW CAN YOU OPT OUT OF RECEIVING OUR PROMOTIONAL EVENTS</font></b>\n\n\n
+    You will occasionally receive e-mail updates from us about fare sales in your area, special offers, new services, and other noteworthy items. We hope you will find these updates interesting and informative. If you wish not to receive them, please click on the "unsubscribe" link or follow the instructions in each e-mail message.\n\n\n
+<b><font color="blue"> PERMISSION REQUIRED FOR USING OUR MOBILE APPLICATIONS</font></b>\n\n\n
+    When the YeLo Finance InfoTech app is installed on your phone or tablet, a list of permissions appears and are needed for the app to function effectively. There is no option to customize the list. The permissions that YeLo Finance InfoTech requires and the data that shall be accessed and its use is as below:\n\n
+<b><font color="blue"> Android permissions:</font></b>\n\n
+<font color="blue"> Device &amp; App history:</font> We need your device permission to get information about your device, like OS (operating system) name, OS version, mobile network, hardware model, unique device identifier, preferred language, etc. Basis these inputs, we intend to optimize your requests experience, use OS specific capabilities to drive great in-funnel experiences using components of device’s OS, etc. Identity: This permission enables us to know about details of your account(s) on your mobile device. We use this info to auto-fill your email ID’s and provide a typing free in-funnel experience. It helps us map email ID’s to a particular user to give you the benefit of exclusive travel offers, wallet cash-backs, etc. It also allows facilitating your Facebook and Google+ login.\n
+<font color="blue"> Location: </font>This permission enables us to give you the benefit of location specific deals and provide you a personalized in-funnel experience. When you launch YeLo Finance InfoTech app to make an enquiry or request, we auto-detect your location so that your nearest airport or city is auto- filled. We also require this permission to recommend you nearest available outlets in case you are running late and want to make a quick request. Your options are personalized basis your locations. We primarily detect user Pin-code and cities to showcase loan providers available in your cities.\n
+<font color="blue"> SMS:</font> If you allow us to access your SMS, we read your SMS to autofill or prepopulate ‘OTP’ while making a transaction and to validate your mobile number. This provides you a seamless experience while making a request and you don’t need to move out of the app to read the SMS and then enter it in the app.\n
+<font color="blue"> Phone:</font> The app requires access to make phone calls so that you can make phone calls to our customer contact centres directly through the app.\n
+<font color="blue"> Contacts:</font> If you allow us to access your contacts, it enables us to provide a lot of social features to you such as sharing your request details with your friends, inviting your friends to try our app, send across referral links to your friends, etc. We may also use this information to make recommendations for services which your friends have accessed. This information will be stored on our servers and synced from your phone.\n
+<font color="blue"> Photo/ Media/ Files: </font>The libraries in the app use these permissions to allow map data to be saved to your phone\'s external storage, like SD cards.\n
+<font color="blue"> Wi-Fi connection information:</font> When you allow us the permission to detect your Wi-Fi connection, we optimize your experience such as more detailing on requests, more offers options to choose from, etc.\n
+<font color="blue"> Device ID &amp; Call information:</font> This permission is used to detect your Android ID through which we can uniquely identify users. It also lets us know your contact details using which we pre- populate specific fields to ensure a seamless experience.\n
+<font color="blue"> Calendar:</font> This permission enables us to put your request dates on your calendar.\n\n\n
+<b><font color="blue"> HOW WE PROTECT YOUR PERSONAL</font></b>\n\n\n
+    All payments (if any) on the Website are secured. This means all Personal Information you provide is transmitted using and coding. is a proven coding system that lets your browser automatically encrypt, or scramble, data before you send it to us. Website has stringent security measures in place to protect the loss, misuse, and alteration of the information under our control. Whenever you change or access your account information, we offer the use of a secure server. Once your information is in our possession, we adhere to strict security guidelines, protecting it against unauthorized access.\n\n\n
+<b><font color="blue"> WITHDRAWAL OF CONSENT AND PERMISSION</font></b>\n\n\n
+    You may withdraw your consent to submit any or all Personal Information or decline to provide any permissions on our Website or Mobile App as covered above at any time. In case, you choose to do so then your access to the Website or Mobile App may be limited, or we might not be able to provide the services to you. You may withdraw your consent by sending an email to YeLo Finance InfoTech.\n\n\n
+<b><font color="blue"> YOUR RIGHTS QUA PERSONAL INFORMATION</font></b>\n\n\n
+    You may access your Personal Information from your user account with YeLo Finance InfoTech. You may also correct your personal information or delete such information (except some mandatory fields) from your user account directly. If you don’t have such a user account, then you write to YeLo Finance InfoTech.\n\n\n
+<b><font color="blue"> ELIGIBILITY TO TRANSACT WITH YELO FINANCE INFOTECH</font></b>\n\n\n
+    You must at least 18 years of age to transact directly with YeLo Finance InfoTech and also to consent to the processing of your personal data, generally PAN India only.\n\n
+    We reserve the rights to revise the Privacy Policy from time to time to suit various legal, business and customer requirement. We will duly notify the users as may be necessary.\n\n
+<b>You may always submit concerns regarding this Privacy Policy via email to us at <a href="contact@yelonow.com"> contact@yelonow.com</a>. YeLo Finance InfoTech shall endeavor to respond to all reasonable concerns and inquires.</b>
+
+    </string>
+
+
+    <string name="terms_of_use_string">
+
+        <font color="blue">Welcome to YeLo Credit cards, Bank loans, Offers, News &amp; more!</font>\n\n
+These terms and conditions outline the rules and regulations for the use of Team Yelo\'s APP, located at https://play.google.com/store/apps/details?id=com.app.yelonow.\n\n
+By accessing this APP we assume you accept these terms and conditions. Do not continue to use YeLo Credit cards, Bank loans, Offers, News &amp; more if you do not agree to take all of the terms and conditions stated on this page.\n\n
+The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and all Agreements: "Client", "You" and "Your" refers to you, the person log on this APP and compliant to the Company’s terms and conditions. "The Company", "Ourselves", "We", "Our" and "Us", refers to our Company. "Party", "Parties", or "Us", refers to both the Client and ourselves. All terms refer to the offer, acceptance and consideration of payment necessary to undertake the process of our assistance to the Client in the most appropriate manner for the express purpose of meeting the Client’s needs in respect of provision of the Company’s stated services, in accordance with and subject to, prevailing law of India. Any use of the above terminology or other words in the singular, plural, capitalization and/or he/she or they, are taken as interchangeable and therefore as referring to same.\n\n\n
+        <b><font color="blue">Cookies</font></b>\n\n
+We employ the use of cookies. By accessing YeLo Credit cards, Bank loans, Offers, News &amp; more, you agreed to use cookies in agreement with the Team Yelo\'s Privacy Policy.\n\n
+Most interactive APPs use cookies to let us retrieve the user’s details for each visit. Cookies are used by our APP to enable the functionality of certain areas to make it easier for people visiting our APP. Some of our affiliate/advertising partners may also use cookies.\n\n\n
+        <b><font color="blue">License</font></b>\n\n
+Unless otherwise stated, Team Yelo and/or its licensors own the intellectual property rights for all material on YeLo Credit cards, Bank loans, Offers, News &amp; more. All intellectual property rights are reserved. You may access this from YeLo Credit cards, Bank loans, Offers, News &amp; more for your own personal use subjected to restrictions set in these terms and conditions.\n\n
+        <font color="blue">You must not:</font>\n\n
+●        Republish material from YeLo Credit cards, Bank loans, Offers, News &amp; more.\n
+●        Sell, rent or sub-license material from YeLo Credit cards, Bank loans, Offers, News &amp; more.\n
+●        Reproduce, duplicate or copy material from YeLo Credit cards, Bank loans, Offers, News &amp; more.\n
+●        Redistribute content from YeLo Credit cards, Bank loans, Offers, News &amp; more.\n\n
+This Agreement shall begin on the date hereof.\n\n
+Parts of this APP offer an opportunity for users to post and exchange opinions and information in certain areas of the APP. Team Yelo does not filter, edit, publish or review Comments prior to their presence on the APP. Comments do not reflect the views and opinions of Team Yelo,its agents and/or affiliates. Comments reflect the views and opinions of the person who post their views and opinions. To the extent permitted by applicable laws, Team Yelo shall not be liable for the Comments or for any liability, damages or expenses caused and/or suffered as a result of any use of and/or posting of and/or appearance of the Comments on this APP.\n\n
+Team Yelo reserves the right to monitor all Comments and to remove any Comments which can be considered inappropriate, offensive or causes breach of these Terms and Conditions.\n\n\n
+        <font color="blue">You warrant and represent that:</font>\n\n
+●        You are entitled to post the Comments on our APP and have all necessary licenses and consents to do so.\n
+●        The Comments do not invade any intellectual property right, including without limitation copyright, patent or trademark of any third party.\n
+●        The Comments do not contain any defamatory, libelous, offensive, indecent or otherwise unlawful material which is an invasion of privacy.\n
+●        The Comments will not be used to solicit or promote business or custom or present commercial activities or unlawful activity.\n\n
+You hereby grant Team Yelo a non-exclusive license to use, reproduce, edit and authorize others to use, reproduce and edit any of your Comments in any and all forms, formats or media.\n\n\n
+        <b><font color="blue">Hyperlinking to our Content</font></b>\n\n
+        <font color="blue">The following organizations may link to our APP without prior written approval:</font>\n\n
+●        Government agencies.\n
+●        Search engines.\n
+●        News organizations.\n
+●        Online directory distributors may link to our APP in the same manner as they hyperlink to the APPs of other listed businesses. and\n
+●        System wide Accredited Businesses except soliciting non-profit organizations, charity shopping malls, and charity fundraising groups which may not hyperlink to our APP.\n\n
+These organizations may link to our home page, to publications or to other APP information so long as the link: (a) is not in any way deceptive, (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products and/or services; and © fits within the context of the linking party’s site.\n\n
+        <font color="blue">We may consider and approve other link requests from the following types of organizations:</font>\n\n
+●        commonly-known consumer and/or business information sources.\n
+●        dot.com community sites.\n
+●        associations or other groups representing charities.\n
+●        online directory distributors.\n
+●        internet portals.\n
+●        accounting, law and consulting firms. and\n
+●        educational institutions and trade associations.\n\n
+We will approve link requests from these organizations if we decide that: (a) the link would not make us look unfavorably to ourselves or to our accredited businesses; (b) the organization does not have any negative records with us; © the benefit to us from the visibility of the hyperlink compensates the absence of Team Yelo; and (d) the link is in the context of general resource information.\n\n
+These organizations may link to our home page so long as the link: (a) is not in any way deceptive; (b) does not falsely imply sponsorship, endorsement or approval of the linking party and its products or services; and © fits within the context of the linking party’s site.\n\n
+If you are one of the organizations listed in paragraph 2 above and are interested in linking to our APP, you must inform us by sending an email to Team Yelo. Please include your name, your organization name, contact information as well as the URL of your site, a list of any URLs from which you intend to link to our APP, and a list of the URLs on our site to which you would like to link. Wait 2-3 weeks for a response.\n\n
+        <font color="blue">Approved organizations may hyperlink to our APP as follows:</font>\n\n
+●        By use of our corporate name. or\n
+●        By use of the uniform resource locator being linked to. or\n
+●        By use of any other description of our APP being linked to that makes sense within the context and format of content on the linking party’s site.\n\n
+No use of Team Yelo\'s logo or other artwork will be allowed for linking absent a trademark license agreement.\n\n
+        <b><font color="blue">iFrames</font></b>\n\n
+Without prior approval and written permission, you may not create frames around our Web Pages that alter in any way the visual presentation or appearance of our APP.\n\n
+        <b><font color="blue">Content Liability</font></b>\n\n
+We shall not be hold responsible for any content that appears on our APP. You agree to protect and defend us against all claims that is rising on your APP. No link(s) should appear on any APP that may be interpreted as libelous, obscene or criminal, or which infringes, otherwise violates, or advocates the infringement or other violation of, any third party rights. Team Yelo is not responsible for any mismatch of information available on our APP &amp; business owners posted on our application. Our system will auto generated &amp; monitarized 24/7 &amp; if we found any disperiances, Team Yelo shall not be liable for such instances.\n\n
+        <b><font color="blue">Your Privacy</font></b>\n\n
+Please read our Privacy Policy.\n\n
+        <font color="blue">Reservation of Rights</font>\n\n
+We reserve the right to request that you remove all links or any particular link to our APP. You approve to immediately remove all links to our APP upon request. We also reserve the right to amen these terms and conditions and it’s linking policy at any time. By continuously linking to our APP, you agree to be bound to and follow these linking terms and conditions.\n\n
+Removal of links from our APP\n\n
+If you find any link on our APP that is offensive for any reason, you are free to contact and inform us any moment. We will consider requests to remove links but we are not obligated to or so or to respond to you directly.\n\n
+We do not ensure that the information on this APP is correct, we do not warrant its completeness or accuracy; nor do we promise to ensure that the APP remains available or that the material on the APP is kept up to date.\n\n
+        <b><font color="blue">Disclaimer</font></b>\n\n
+To the maximum extent permitted by applicable law, we exclude all representations, warranties and conditions relating to our APP and the use of this APP. Nothing in this disclaimer will:\n\n
+●        limit or exclude our or your liability for death or personal injury.\n
+●        limit or exclude our or your liability for fraud or fraudulent misrepresentation.\n
+●        limit any of our or your liabilities in any way that is not permitted under applicable law. or\n
+●        exclude any of our or your liabilities that may not be excluded under applicable law.\n\n
+The limitations and prohibitions of liability set in this Section and elsewhere in this disclaimer: (a) are subject to the preceding paragraph, and (b) govern all liabilities arising under the disclaimer, including liabilities arising in contract, in tort and for breach of statutory duty.\n\n
+As long as the APP and the information and services on the APP are provided free of charge, we will not be liable for any loss or damage of any nature.
+   </string>
+
+
+</resources>

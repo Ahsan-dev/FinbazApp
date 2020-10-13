@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/title_home"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/navigation_emi_calculator"
+        android:icon="@drawable/emi_calc"
+        android:title="@string/title_emi_calc"
+        app:showAsAction="always"
+        />
+        />
+
+    <item
+        android:id="@+id/navigation_offers"
+        android:icon="@drawable/offers"
+        android:title="@string/title_offers"
+        app:showAsAction="always"
+        />
+        />
+    <item
+        android:id="@+id/navigation_refer_earn"
+        android:icon="@drawable/refer_earn"
+        android:title="@string/title_refer_earn"
+        app:showAsAction="always"
+        />
+        />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/account"
+        android:title="@string/title_bank_account"
+        app:showAsAction="always"
+        />
+        />
+
+
+</menu>

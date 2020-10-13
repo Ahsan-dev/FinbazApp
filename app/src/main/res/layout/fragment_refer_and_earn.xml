@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ReferAndEarnFragment">
+
+    <include
+        layout="@layout/savings_toolbar_layout"
+        android:id="@+id/refer_earn_toolbar_id"/>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/refer_and_earn_tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refer_earn_toolbar_id"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/refer_and_earn_viewpagerId"
+        android:layout_below="@id/refer_and_earn_tablayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

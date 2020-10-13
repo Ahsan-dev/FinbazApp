@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_loan"
+            android:icon="@drawable/loan"
+            android:title="Loan"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_savings_account"
+            android:icon="@drawable/savings_account"
+            android:title="Savings Account"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_insurance"
+            android:icon="@drawable/insurance"
+            android:title="Insurance"
+
+            />
+
+        <item
+            android:id="@+id/drawer_nav_credit_card"
+            android:icon="@drawable/credit_card"
+            android:title="Credit Card"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_demat_account"
+            android:icon="@drawable/demat"
+            android:title="Demat Account"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_credit_score"
+            android:icon="@drawable/score"
+            android:title="Credit Score"
+
+            />
+        <item
+            android:id="@+id/drawer_nav_miscellaneous"
+            android:icon="@drawable/miscellaneous"
+            android:title="Miscellaneous"
+
+            />
+
+        <item android:title="More">
+
+            <menu>
+                <item
+                    android:id="@+id/drawer_nav_blog"
+                    android:icon="@drawable/blog_icon"
+                    android:title="Blog"
+
+                    />
+                <item
+                    android:id="@+id/drawer_nav_contact_us"
+                    android:icon="@drawable/contact_icon"
+                    android:title="Contact Us"
+
+                    />
+                <item
+                    android:id="@+id/drawer_nav_about_us"
+                    android:icon="@drawable/about_icon"
+                    android:title="About Us"
+
+                    />
+                <item
+                    android:id="@+id/drawer_nav_our_policies"
+                    android:icon="@drawable/policies_icon"
+                    android:title="Our Policies"
+
+                    />
+
+
+
+            </menu>
+
+
+        </item>
+
+        <item
+            android:id="@+id/drawer_nav_our_logout"
+            android:icon="@drawable/logout"
+            android:title="Exit"
+
+            />
+
+
+
+    </group>
+
+</menu>

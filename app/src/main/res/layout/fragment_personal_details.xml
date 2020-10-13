@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalDetailsFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/personal_details_info_linear"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+
+                        >
+                        <TextView
+                            android:id="@+id/personal_detail_gender_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender:"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"/>
+
+                        <Spinner
+                            android:id="@+id/personal_detail_gender_spinner_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:pointerIcon="arrow" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        >
+                        <TextView
+                            android:id="@+id/personal_detail_dob_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of Birth :"
+                            android:textColor="@android:color/black"
+                            android:layout_gravity="center"
+                            android:textSize="16sp"/>
+
+                        <ImageView
+                            android:id="@+id/personal_detail_dob_btn_id"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@drawable/calendar"
+                            android:layout_marginLeft="50dp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+
+                        >
+                        <TextView
+                            android:id="@+id/personal_detail_state_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State :"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"/>
+
+                        <Spinner
+                            android:id="@+id/personal_detail_state_spinner_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:pointerIcon="arrow" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+
+                        >
+                        <TextView
+                            android:id="@+id/personal_detail_city_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="City :"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"/>
+
+                        <Spinner
+                            android:id="@+id/personal_detail_city_spinner_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:pointerIcon="arrow" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+
+                        >
+                        <TextView
+                            android:id="@+id/personal_detail_area_code_txt_id"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Area code :"
+                            android:textColor="@android:color/black"
+                            android:textSize="16sp"/>
+
+                        <EditText
+                            android:id="@+id/personal_detail_area_code_edt_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:hint="Enter 6 digit area code"
+                            android:maxLength="6"
+                            android:inputType="number"
+                            android:background="@drawable/edit_back"
+                            android:padding="5dp"
+                            />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/personal_detail_submit_btn_id"
+                    android:layout_below="@id/personal_details_info_linear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:textAllCaps="false"
+                    android:background="@drawable/card_back_one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/personal_detail_edt_request_txt_id"
+                    android:layout_below="@id/personal_detail_submit_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:textColor="#097EF3"
+                    android:text="Request to edit personal information "/>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".OTPActivity">
+    <include
+
+        android:id="@+id/otp_toolbar_id"
+        layout="@layout/savings_toolbar_layout"
+        />
+
+
+    <TextView
+        android:id="@+id/otp_vify_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OTP Verification"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_above="@id/otp_relative"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="15dp"
+        android:id="@+id/otp_relative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_centerInParent="true"
+        >
+
+        <com.poovam.pinedittextfield.SquarePinField
+            android:id="@+id/otp_field_pin_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:layout_centerHorizontal="true"
+            android:textSize="12sp"
+            android:padding="5dp"
+            app:cornerRadius="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+        app:fieldBgColor="#ddd"
+        app:noOfFields="6"
+        android:textSelectHandle="@drawable/text_handle"
+        android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/otp_submit_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/otp_field_pin_edt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/back_toggle_sign"
+            android:text="Submit"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/otp_field_resend_txt"
+        android:layout_below="@id/otp_relative"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textColor="@color/colorTitle"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

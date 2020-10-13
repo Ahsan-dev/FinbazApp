@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/back_seven_round"
+    android:paddingBottom="20dp"
+
+    >
+
+    <TextView
+        android:id="@+id/emi_dialog_loan_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Loan Title"
+        android:textSize="17sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/emi_dialog_loan_amount_text"
+        android:layout_below="@id/emi_dialog_loan_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Loan Ammount: 1000 INR"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/emi_dialog_interest_rate_text"
+        android:layout_below="@id/emi_dialog_loan_amount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Interest rate: 5%"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/emi_dialog_tenure_text"
+        android:layout_below="@id/emi_dialog_interest_rate_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total tenures in months: 240"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/emi_dialog_emi_text"
+        android:layout_below="@id/emi_dialog_tenure_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EMI: 1000 INR"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+    <TextView
+        android:id="@+id/emi_dialog_total_ir_text"
+        android:layout_below="@id/emi_dialog_emi_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total interest payable: 1000 INR"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/emi_dialog_total_amount_text"
+        android:layout_below="@id/emi_dialog_total_ir_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total amount payable: 1000 INR"
+        android:gravity="center_horizontal"
+        android:background="@drawable/back_phone"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"/>
+
+
+    <TextView
+        android:id="@+id/emi_dialog_ok_btn"
+        android:layout_below="@id/emi_dialog_total_amount_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Okay"
+        android:background="@drawable/back_toggle_sign"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:gravity="center_horizontal"
+        android:padding="3dp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:elevation="5dp"/>
+
+
+
+
+</RelativeLayout>

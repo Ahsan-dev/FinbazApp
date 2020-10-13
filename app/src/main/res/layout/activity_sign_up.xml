@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_back"
+    tools:context=".SignUpActivity">
+
+    <include
+        android:id="@+id/signup_toolbar_id"
+        layout="@layout/savings_toolbar_layout"
+        />
+    <TextView
+        android:id="@+id/sign_up_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign Up Here"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/signup_toolbar_id"
+        />
+
+    <RelativeLayout
+        android:id="@+id/sign_up_first_name_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_title"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        >
+        <EditText
+            android:id="@+id/sign_up_first_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/name"
+            android:hint="First Name"
+            android:textIsSelectable="false"
+            android:maxLength="20"
+            android:drawablePadding="10dp"
+            android:backgroundTint="@android:color/transparent"/>
+<!--            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"-->
+<!--            android:inputType="textFilter"-->
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sign_up_last_name_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_first_name_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        >
+        <EditText
+            android:id="@+id/sign_up_last_name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/name"
+            android:hint="Last Name"
+            android:textIsSelectable="false"
+            android:drawablePadding="10dp"
+            android:inputType="text"
+            android:maxLength="20"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sign_up_mobile_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_last_name_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        >
+        <EditText
+            android:id="@+id/sign_up_phone_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/phone_icon"
+            android:hint="Mobile"
+            android:textIsSelectable="false"
+            android:drawablePadding="10dp"
+            android:inputType="numberSigned"
+            android:maxLength="10"
+            android:backgroundTint="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/sign_up_mobile_send_otp_txt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send OTP"
+            android:background="#E0E1E3"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            />
+        <ImageView
+            android:id="@+id/sign_up_mobile_verified_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/verified"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/sign_up_mobile_otp_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_mobile_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+
+        >
+        <EditText
+            android:id="@+id/sign_up_mobile_otp_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OTP"
+            android:drawablePadding="10dp"
+            android:textIsSelectable="false"
+            android:maxLength="6"
+            android:drawableLeft="@drawable/otp"
+            android:inputType="numberPassword"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/sign_up_mobile_verify_otp_txt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:background="#E0E1E3"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/sign_up_email_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_mobile_otp_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        >
+        <EditText
+            android:id="@+id/sign_up_email_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/email_icon"
+            android:inputType="textEmailAddress"
+            android:textIsSelectable="false"
+            android:backgroundTint="@android:color/transparent"
+            />
+        <TextView
+            android:id="@+id/sign_up_email_send_otp_txt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send OTP"
+            android:background="#E0E1E3"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+        <ImageView
+            android:id="@+id/sign_up_email_verified_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/verified"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sign_up_email_otp_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_email_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+
+        >
+        <EditText
+            android:id="@+id/sign_up_email_otp_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="OTP"
+            android:drawablePadding="10dp"
+            android:textIsSelectable="false"
+            android:maxLength="6"
+            android:drawableLeft="@drawable/otp"
+            android:inputType="numberPassword"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+        <TextView
+            android:id="@+id/sign_up_email_verify_otp_txt_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verify OTP"
+            android:background="#E0E1E3"
+            android:textColor="@android:color/black"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sign_up_referral_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_phone"
+        android:layout_below="@id/sign_up_email_otp_linear"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="6dp"
+        >
+        <EditText
+            android:id="@+id/sign_up_referral_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/referral"
+            android:drawablePadding="10dp"
+            android:hint="Referral Code (Optional)"
+            android:textIsSelectable="false"
+            android:maxLength="10"
+            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+            android:inputType="textCapCharacters"
+            android:backgroundTint="@android:color/transparent"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/terms_policy_linear"
+        android:orientation="horizontal"
+        android:layout_below="@id/sign_up_referral_linear"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content">
+
+        <com.rey.material.widget.CheckBox
+            android:id="@+id/sign_up_terms_policy_checker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Material.Drawable.CheckBox"
+            android:text="I have read and accept"
+            android:textColor="@android:color/black"
+            app:cbd_strokeColor="@color/colorTitle"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textAllCaps="false" />
+        <TextView
+            android:id="@+id/sign_up_ourpolicyTxtBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Our Policies"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTitle"
+            android:layout_marginLeft="5dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:id="@+id/sign_up_sign_up_btn"
+        android:layout_below="@id/terms_policy_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/back_toggle_sign"
+        android:text="Sign Up"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+
+
+</RelativeLayout>

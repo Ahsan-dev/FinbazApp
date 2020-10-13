@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="10dp"
+    app:cardElevation="5dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:orientation="vertical"
+        android:weightSum="7"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:orientation="horizontal"
+            android:weightSum="2"
+
+            >
+
+
+                <TextView
+                    android:id="@+id/demat_account_item_featured_text_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Featured"
+                    android:background="@drawable/featured_back"
+                    android:padding="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/demat_company_logo_card_view"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:layout_centerInParent="true">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/demat_account_item_company_logo"
+                            android:layout_width="140dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/upstox_icon"
+                            android:layout_centerInParent="true"/>
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/demat_account_item_account_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Upstox Demat Account"
+                    android:layout_below="@id/demat_company_logo_card_view"
+                    android:textSize="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="10dp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal" />
+
+
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="0dp"
+                    android:layout_margin="0dp"
+                    >
+
+                    <RatingBar
+                        android:id="@+id/demat_account_item_rating_bar_id"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:background="@drawable/rating_back"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="true"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:transformPivotX="0dp"
+                        android:transformPivotY="0dp"
+                        android:max="5"
+                        android:numStars="5"
+                        android:progressTint="#258"
+                        android:rating="4"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        />
+                </RelativeLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DDE2E6"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:orientation="horizontal">
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/demat_account_item_view_details_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back_three"
+                    android:text="View Details"
+                    android:textAllCaps="false"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+
+
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DDE2E6"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/demat_account_item_apply_btn_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_back_two"
+                    android:text="Apply"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

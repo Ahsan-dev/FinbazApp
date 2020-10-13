@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TermsUseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/terms_of_use_string"
+            android:layout_margin="15dp"
+            android:layout_centerInParent="true"
+            android:paddingBottom="40dp"
+            android:textColor="@android:color/black"
+            android:scrollbars="vertical"
+            />
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>
