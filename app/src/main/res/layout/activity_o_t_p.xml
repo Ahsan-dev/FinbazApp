@@ -12,6 +12,15 @@
         layout="@layout/savings_toolbar_layout"
         />
 
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/logoslim"
+        android:layout_below="@id/otp_toolbar_id"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
 
     <TextView
         android:id="@+id/otp_vify_title"

@@ -10,10 +10,12 @@ public class SavingsAccountCardModel {
     private String mb;
     private String aoc;
     private float ratingNumber;
+    private String parentPage;
 
 
 
-    public SavingsAccountCardModel(int bankLogoResource, int bankTitleResource, boolean featured, String ir, String mb, String aoc, float ratingNumber,String bankname) {
+
+    public SavingsAccountCardModel(int bankLogoResource, int bankTitleResource, boolean featured, String ir, String mb, String aoc, float ratingNumber, String bankname,String parentPage) {
         this.bankLogoResource = bankLogoResource;
         this.bankTitleResource = bankTitleResource;
         this.featured = featured;
@@ -22,6 +24,15 @@ public class SavingsAccountCardModel {
         this.aoc = aoc;
         this.ratingNumber = ratingNumber;
         this.bankname = bankname;
+        this.parentPage = parentPage;
+    }
+
+    public String getParentPage() {
+        return parentPage;
+    }
+
+    public void setParentPage(String parentPage) {
+        this.parentPage = parentPage;
     }
 
     public String getBankname() {

@@ -21,7 +21,7 @@ public class DematDetailsActivity extends AppCompatActivity implements View.OnCl
     private RatingBar ratingBar;
     private RelativeLayout fragRelative;
     private TextView applyBtn;
-    private String companyName;
+    private String companyName, fromIntent;
     private Fragment fragment;
     private Toolbar dematDetailsToolbar;
     private ImageView backBtn;
@@ -35,6 +35,8 @@ public class DematDetailsActivity extends AppCompatActivity implements View.OnCl
         dematDetailsToolbar = findViewById(R.id.demate_details_toolbar);
         setSupportActionBar(dematDetailsToolbar);
 
+        fromIntent = getIntent().getStringExtra("fromIntent");
+
         backBtn = findViewById(R.id.savings_account_back_button);
         toolbarTitle = findViewById(R.id.savings_toolbar_title_id);
 
@@ -42,7 +44,7 @@ public class DematDetailsActivity extends AppCompatActivity implements View.OnCl
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),DematActivity.class));
+                startActivity(new Intent(getApplicationContext(),DematActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
 
             }
         });
@@ -60,6 +62,8 @@ public class DematDetailsActivity extends AppCompatActivity implements View.OnCl
         applyBtn = findViewById(R.id.demat_details_apply_txt_btn);
         dematCompanyLogo = findViewById(R.id.demat_details_item_company_logo);
         docReqBtn = findViewById(R.id.demata_details_docs_required_txt_btn);
+
+
 
 
         aboutBtn.setOnClickListener(this);
@@ -126,9 +130,11 @@ public class DematDetailsActivity extends AppCompatActivity implements View.OnCl
 
         }
 
+    }
 
-
-
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(),DematActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
 
     }
 

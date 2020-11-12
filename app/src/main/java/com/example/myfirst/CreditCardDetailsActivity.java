@@ -27,7 +27,7 @@ public class CreditCardDetailsActivity extends AppCompatActivity implements View
     private RatingBar ratingBar;
     private RelativeLayout fragRelative;
     private TextView applyBtn;
-    private String cardName;
+    private String cardName, fromIntent;
     private Fragment fragment;
     private Toolbar creditCardDetailsToolbar;
     private ImageView backBtn;
@@ -43,7 +43,7 @@ public class CreditCardDetailsActivity extends AppCompatActivity implements View
         creditCardDetailsToolbar = findViewById(R.id.credit_card_details_toolbar);
         setSupportActionBar(creditCardDetailsToolbar);
 
-
+        fromIntent = getIntent().getStringExtra("fromIntent");
 
         backBtn = findViewById(R.id.savings_account_back_button);
         toolbarTitle = findViewById(R.id.savings_toolbar_title_id);
@@ -52,7 +52,7 @@ public class CreditCardDetailsActivity extends AppCompatActivity implements View
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),CreditCardActivity.class));
+                startActivity(new Intent(getApplicationContext(),CreditCardActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
 
             }
         });
@@ -124,6 +124,12 @@ public class CreditCardDetailsActivity extends AppCompatActivity implements View
 
 
 
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(getApplicationContext(),CreditCardActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
 
     }
 

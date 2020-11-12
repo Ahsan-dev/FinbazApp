@@ -56,6 +56,7 @@ public class DematAccountCardRecyclerAdapter extends RecyclerView.Adapter<DematA
             public void onClick(View view) {
                 Intent companyDetailIntent = new Intent(context,DematDetailsActivity.class);
                 companyDetailIntent.putExtra("companyName",dmat.getCompanyName());
+                companyDetailIntent.putExtra("fromIntent",dmat.getDematParentPage());
                 context.startActivity(companyDetailIntent);
             }
         });

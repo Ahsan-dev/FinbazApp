@@ -7,13 +7,25 @@ public class DematAccountCardModel {
     private int accountTitleResource;
     private boolean featured;
     private float ratingNumber;
+    private String dematParentPage;
 
-    public DematAccountCardModel(String companyName, int companyLogoResource, int accountTitleResource, boolean featured, float ratingNumber) {
+
+
+    public DematAccountCardModel(String companyName, int companyLogoResource, int accountTitleResource, boolean featured, float ratingNumber, String dematParentPage) {
         this.companyName = companyName;
         this.companyLogoResource = companyLogoResource;
         this.accountTitleResource = accountTitleResource;
         this.featured = featured;
         this.ratingNumber = ratingNumber;
+        this.dematParentPage = dematParentPage;
+    }
+
+    public String getDematParentPage() {
+        return dematParentPage;
+    }
+
+    public void setDematParentPage(String dematParentPage) {
+        this.dematParentPage = dematParentPage;
     }
 
     public String getCompanyName() {

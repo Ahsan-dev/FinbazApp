@@ -187,7 +187,7 @@ public class EMICalculatorFragment extends Fragment implements View.OnClickListe
 
         if(view.getId()==R.id.emi_calculator_personal_loan_linear){
             loanTypeTitle = "Personal Loan";
-
+            loanTitle.setText(loanTypeTitle);
             loanAmountEdt.setText("");
             irEdt.setText("");
             tenureEdt.setText("");

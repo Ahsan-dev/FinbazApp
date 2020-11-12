@@ -55,6 +55,7 @@ public class CreditCardRecyclerAdapter extends RecyclerView.Adapter<CreditCardVi
             public void onClick(View view) {
                 Intent carditDetailIntent = new Intent(context,CreditCardDetailsActivity.class);
                 carditDetailIntent.putExtra("cardName",cardModel.getCardName());
+                carditDetailIntent.putExtra("fromIntent",cardModel.getCreditParentPage());
                 context.startActivity(carditDetailIntent);
             }
         });

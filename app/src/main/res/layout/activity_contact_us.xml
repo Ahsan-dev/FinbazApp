@@ -10,11 +10,21 @@
         layout="@layout/savings_toolbar_layout"
         android:id="@+id/contact_us_toolbar"/>
 
+    <ImageView
+        android:id="@+id/contact_us_image"
+        android:layout_below="@id/contact_us_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/contact_us_three"
+        android:padding="5dp"
+        android:layout_margin="20dp"
+        android:scaleType="fitXY"/>
+
 
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_below="@id/contact_us_image"
         android:id="@+id/contact_us_query_relative"
         >
 
@@ -67,7 +77,7 @@
             android:text="Submit"
             android:textAllCaps="false"
             android:textSize="17sp"
-            android:background="@drawable/card_back_one"
+            android:background="@drawable/back_toggle_sign"
             android:textColor="@android:color/white"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="30dp"
@@ -121,7 +131,6 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/refer_a_friend_txt"
                 android:text="We have received your response. Our team will contact you shortly."
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"

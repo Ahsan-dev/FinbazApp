@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUsActivity">
+    <include
+        layout="@layout/savings_toolbar_layout"
+        android:id="@+id/about_us_toolbar_id"/>
+
+
+
+    <RelativeLayout
+        android:id="@+id/about_us_card"
+        android:layout_below="@id/about_us_title_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="50dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_our_aim"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_privacy"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    />
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/about_us"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_technology"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/about_us_convenience"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="5dp"
+                    />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/about_us_title_text"
+        android:layout_below="@id/about_us_toolbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="We Thought You'd Like To Read More About Us And Get Familiar With What We Do"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/about_back"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:padding="3dp"
+        android:elevation="5dp"
+        />
+
+</RelativeLayout>

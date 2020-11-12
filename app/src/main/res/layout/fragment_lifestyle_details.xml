@@ -119,7 +119,7 @@
                     android:layout_height="wrap_content"
                     android:text="Submit"
                     android:textAllCaps="false"
-                    android:background="@drawable/card_back_one"
+                    android:background="@drawable/back_toggle_sign"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:textColor="@android:color/white"

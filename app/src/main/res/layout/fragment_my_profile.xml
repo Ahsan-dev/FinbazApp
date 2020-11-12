@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/my_account_back"
+    android:background="#7E93CF"
     tools:context=".MyProfileFragment">
     <include
         layout="@layout/myprofile_toolbar_layout"

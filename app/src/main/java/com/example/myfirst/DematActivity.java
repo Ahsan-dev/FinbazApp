@@ -28,15 +28,20 @@ public class DematActivity extends AppCompatActivity {
     private List<DematAccountCardModel> daList;
     private DematAccountCardRecyclerAdapter daAdapter;
     private RecyclerView dmatRecycler;
+    private String fromIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demat);
 
+        fromIntent = getIntent().getStringExtra("fromIntent");
+
         dmatToolbar = findViewById(R.id.demat_toolbar_id);
         backBtn =findViewById(R.id.savings_account_back_button);
         setSupportActionBar(dmatToolbar);
+
+
 
         dmatRecycler = findViewById(R.id.demat_account_recycler);
 
@@ -46,12 +51,12 @@ public class DematActivity extends AppCompatActivity {
 
         daList = new ArrayList<>();
 
-        daList.add(new DematAccountCardModel("upstox",R.drawable.upstox_icon,R.string.upstox_account,true,4.9f));
-        daList.add(new DematAccountCardModel("angelBroking",R.drawable.angel_broking_icon,R.string.angel_broking_account,true,4.8f));
-        daList.add(new DematAccountCardModel("icici",R.drawable.icici_bank_logo,R.string.icici_account,false,4.7f));
-        daList.add(new DematAccountCardModel("5paisa",R.drawable.five_paisa_logo,R.string.five_paisa_account,false,4.7f));
-        daList.add(new DematAccountCardModel("iifl",R.drawable.iifl_company_logo,R.string.iifl_account,false,4.8f));
-        daList.add(new DematAccountCardModel("sharekhan",R.drawable.sharekhan_icon,R.string.sharekhan_account,false,4.7f));
+        daList.add(new DematAccountCardModel("upstox",R.drawable.upstox_icon,R.string.upstox_account,true,4.9f,fromIntent));
+        daList.add(new DematAccountCardModel("angelBroking",R.drawable.angel_broking_icon,R.string.angel_broking_account,true,4.8f,fromIntent));
+        daList.add(new DematAccountCardModel("icici",R.drawable.icici_bank_logo,R.string.icici_account,false,4.7f,fromIntent));
+        daList.add(new DematAccountCardModel("5paisa",R.drawable.five_paisa_logo,R.string.five_paisa_account,false,4.7f,fromIntent));
+        daList.add(new DematAccountCardModel("iifl",R.drawable.iifl_company_logo,R.string.iifl_account,false,4.8f,fromIntent));
+        daList.add(new DematAccountCardModel("sharekhan",R.drawable.sharekhan_icon,R.string.sharekhan_account,false,4.7f,fromIntent));
 
 
         daAdapter = new DematAccountCardRecyclerAdapter(daList,DematActivity.this);
@@ -98,9 +103,20 @@ public class DematActivity extends AppCompatActivity {
         yesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeIntent = new Intent(DematActivity.this,HomeActivity.class);
-                homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(homeIntent);
+
+                if(fromIntent.equals("home")){
+
+                    Intent homeIntent = new Intent(DematActivity.this,HomeActivity.class);
+                    homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(homeIntent);
+
+                } else {
+
+                    Intent moreIntent = new Intent(DematActivity.this,MoreActivity.class);
+                    moreIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(moreIntent);
+
+                }
             }
         });
         noBtn.setOnClickListener(new View.OnClickListener() {

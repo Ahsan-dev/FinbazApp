@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -81,43 +82,43 @@ public class HomeActivity extends AppCompatActivity  {
 
                 if(item.getItemId()==R.id.drawer_nav_loan){
 
-                    startActivity(new Intent(getApplicationContext(),LoanActivity.class));
+                    startActivity(new Intent(getApplicationContext(),LoanActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_savings_account){
 
-                    startActivity(new Intent(getApplicationContext(),SavingsAccountActivity.class));
+                    startActivity(new Intent(getApplicationContext(),SavingsAccountActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_insurance){
 
-                    startActivity(new Intent(getApplicationContext(),InsuranceActivity.class));
+                    startActivity(new Intent(getApplicationContext(),InsuranceActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_credit_card){
 
-                    startActivity(new Intent(getApplicationContext(),CreditCardActivity.class));
+                    startActivity(new Intent(getApplicationContext(),CreditCardActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_demat_account){
 
-                    startActivity(new Intent(getApplicationContext(),DematActivity.class));
+                    startActivity(new Intent(getApplicationContext(),DematActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_credit_score){
 
-                    startActivity(new Intent(getApplicationContext(),CreditScoreActivity.class));
+                    startActivity(new Intent(getApplicationContext(),CreditScoreActivity.class).putExtra("fromIntent","home"));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_miscellaneous){
 
-                    startActivity(new Intent(getApplicationContext(),MiscellaneousActivity.class));
+                    startActivity(new Intent(getApplicationContext(),MiscellaneousActivity.class).putExtra("fromIntent","home"));
 
                 }
 
@@ -129,13 +130,13 @@ public class HomeActivity extends AppCompatActivity  {
 
                 if(item.getItemId()==R.id.drawer_nav_contact_us){
 
-                    startActivity(new Intent(getApplicationContext(),ContactUsActivity.class));
+                    startActivity(new Intent(getApplicationContext(),ContactUsActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK));
 
                 }
 
                 if(item.getItemId()==R.id.drawer_nav_about_us){
 
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),AboutUsActivity.class));
 
                 }
 
@@ -151,7 +152,6 @@ public class HomeActivity extends AppCompatActivity  {
                     dialog.setCancelable(false);
                     dialog.setContentView(R.layout.dialog_layout);
                     dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
-
                     TextView message = (TextView) dialog.findViewById(R.id.alertDialogMessageId);
                     message.setText("Do you want to exit?");
 
@@ -161,6 +161,14 @@ public class HomeActivity extends AppCompatActivity  {
                         @Override
                         public void onClick(View v) {
                             finish();
+                            System.exit(0);
+
+//                            Intent homeIntent = new Intent(Intent.ACTION_MAIN);
+//                            homeIntent.addCategory( Intent.CATEGORY_HOME );
+//                            homeIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+//                            startActivity(homeIntent);
+//                            System.exit(0);
+
                         }
                     });
                     noBtn.setOnClickListener(new View.OnClickListener() {

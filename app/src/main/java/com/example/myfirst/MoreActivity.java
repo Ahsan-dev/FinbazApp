@@ -38,6 +38,8 @@ public class MoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                startActivity(new Intent(MoreActivity.this,HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
+
             }
         });
 
@@ -53,42 +55,42 @@ public class MoreActivity extends AppCompatActivity {
         loanCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),LoanActivity.class);
+                Intent intent = new Intent(getApplicationContext(),LoanActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
         savingsAccountCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),SavingsAccountActivity.class);
+                Intent intent = new Intent(getApplicationContext(),SavingsAccountActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
         insuranceCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),InsuranceActivity.class);
+                Intent intent = new Intent(getApplicationContext(),InsuranceActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
         creditCardCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),CreditCardActivity.class);
+                Intent intent = new Intent(getApplicationContext(),CreditCardActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
         dmatCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),DematActivity.class);
+                Intent intent = new Intent(getApplicationContext(),DematActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
         creditScoreCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(),CreditScoreActivity.class);
+                Intent intent = new Intent(getApplicationContext(),CreditScoreActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
             }
         });
@@ -97,12 +99,17 @@ public class MoreActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                Intent intent = new Intent(getApplicationContext(),MiscellaneousActivity.class);
+                Intent intent = new Intent(getApplicationContext(),MiscellaneousActivity.class).putExtra("fromIntent","more");
                 startActivity(intent);
 
             }
         });
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(MoreActivity.this,HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
     }
 }

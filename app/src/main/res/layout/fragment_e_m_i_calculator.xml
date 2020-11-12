@@ -13,7 +13,8 @@
         android:id="@+id/emi_calculator_under_toolbar_view"
         android:layout_below="@id/emi_calculator_toolbar_id"
         android:layout_width="match_parent"
-        android:layout_height="8dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="3dp"
         android:background="@drawable/card_back_seven"
         android:layout_marginBottom="3dp"
         android:elevation="2dp"
@@ -264,7 +265,7 @@
         android:layout_below="@id/emi_calculator_all_loan_scroll_relative"
         android:layout_marginTop="5dp"
         android:layout_width="match_parent"
-        android:layout_height="8dp"
+        android:layout_height="5dp"
         android:background="@drawable/card_back_seven_invert"
         android:layout_marginBottom="3dp"
         android:elevation="3dp"
@@ -284,7 +285,7 @@
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
-            android:textSize="18sp"
+            android:textSize="15sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"
             />
@@ -294,7 +295,7 @@
             android:id="@+id/emi_calculator_loan_amount_relative"
             android:layout_below="@id/emi_calculator_loan_title"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             >
             <TextView
@@ -302,7 +303,7 @@
                 android:layout_height="wrap_content"
                 android:text="Loan Amount (INR):"
                 android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:layout_margin="8dp"/>
 
             <RelativeLayout
@@ -332,6 +333,7 @@
                     android:layout_toRightOf="@id/edit_text_drawable"
                     android:layout_marginLeft="10dp"
                     android:maxLength="8"
+                    android:textSize="10sp"
                     android:gravity="center_horizontal"
                     android:backgroundTint="@android:color/transparent"
                     style="@style/Material.Widget.EditText.Light"
@@ -348,10 +350,9 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="5dp"
                 app:bsb_bubble_color="#EF5252"
-                app:bsb_bubble_text_size="12sp"
+                app:bsb_bubble_text_size="10sp"
                 app:bsb_bubble_text_color="#FBF9FA"
                 android:layout_centerHorizontal="true"
-                android:paddingLeft="10dp"
                 app:bsb_max="50000000"
                 app:bsb_min="1000"
                 app:bsb_progress="0"
@@ -371,7 +372,7 @@
             android:id="@+id/emi_calculator_interest_rate_relative"
             android:layout_below="@id/emi_calculator_loan_amount_relative"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             >
             <TextView
@@ -379,7 +380,7 @@
                 android:layout_height="wrap_content"
                 android:text="Interest Rate (ROI):"
                 android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:layout_margin="8dp"/>
 
             <RelativeLayout
@@ -409,6 +410,7 @@
                     android:layout_toRightOf="@id/edit_text_drawable_ir"
                     android:layout_marginLeft="10dp"
                     android:maxLength="4"
+                    android:textSize="10sp"
                     android:layout_centerHorizontal="true"
                     android:backgroundTint="@android:color/transparent"
                     style="@style/Material.Widget.EditText.Light"
@@ -425,7 +427,7 @@
                 android:layout_alignParentBottom="true"
                 android:layout_marginBottom="5dp"
                 app:bsb_bubble_color="#EF5252"
-                app:bsb_bubble_text_size="12sp"
+                app:bsb_bubble_text_size="10sp"
                 app:bsb_bubble_text_color="#FBF9FA"
                 android:layout_centerHorizontal="true"
                 android:paddingLeft="10dp"
@@ -448,7 +450,7 @@
             android:id="@+id/emi_calculator_tenure_relative"
             android:layout_below="@id/emi_calculator_interest_rate_relative"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="80dp"
             android:layout_marginTop="10dp"
             >
             <TextView
@@ -456,7 +458,7 @@
                 android:layout_height="wrap_content"
                 android:text="Tenure (Months):"
                 android:textColor="@android:color/black"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 android:layout_margin="8dp"/>
 
             <RelativeLayout
@@ -490,6 +492,7 @@
                     android:backgroundTint="@android:color/transparent"
                     style="@style/Material.Widget.EditText.Light"
                     android:inputType="numberDecimal"
+                    android:textSize="10sp"
                     />
 
 
@@ -530,7 +533,7 @@
         android:text="Calculate"
         android:background="@drawable/back_toggle_sign"
         android:layout_alignParentBottom="true"
-        android:textSize="17sp"
+        android:textSize="15sp"
         android:gravity="center_horizontal"
         android:textColor="@android:color/white"
         android:textStyle="bold"

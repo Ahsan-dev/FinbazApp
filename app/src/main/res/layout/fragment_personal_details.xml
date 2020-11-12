@@ -71,12 +71,26 @@
                             android:layout_gravity="center"
                             android:textSize="16sp"/>
 
+
+                        <TextView
+                            android:id="@+id/personal_details_dob_text_edt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="15dp"
+                            android:background="@drawable/edit_back"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:paddingTop="3dp"
+                            android:paddingBottom="3dp"
+                            android:text="DD/MM/YYYY"
+                            android:textSize="17sp"/>
                         <ImageView
                             android:id="@+id/personal_detail_dob_btn_id"
                             android:layout_width="30dp"
                             android:layout_height="30dp"
                             android:src="@drawable/calendar"
-                            android:layout_marginLeft="50dp" />
+                            android:layout_marginLeft="10dp"
+                             />
 
 
                     </LinearLayout>
@@ -151,7 +165,7 @@
                             android:id="@+id/personal_detail_area_code_txt_id"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Area code :"
+                            android:text="Pin code :"
                             android:textColor="@android:color/black"
                             android:textSize="16sp"/>
 
@@ -159,7 +173,7 @@
                             android:id="@+id/personal_detail_area_code_edt_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="50dp"
+                            android:layout_marginLeft="30dp"
                             android:hint="Enter 6 digit area code"
                             android:maxLength="6"
                             android:inputType="number"
@@ -179,7 +193,7 @@
                     android:layout_height="wrap_content"
                     android:text="Submit"
                     android:textAllCaps="false"
-                    android:background="@drawable/card_back_one"
+                    android:background="@drawable/back_toggle_sign"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:textColor="@android:color/white"

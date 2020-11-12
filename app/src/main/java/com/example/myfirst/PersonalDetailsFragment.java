@@ -21,7 +21,7 @@ import android.widget.TextView;
 
 public class PersonalDetailsFragment extends Fragment {
 
-    private TextView genderTxt, dobTxt, stateTxt, cityTxt, areaCodeTxt, edtReqTxtBtn;
+    private TextView genderTxt, dobTxt, stateTxt, cityTxt, areaCodeTxt, edtReqTxtBtn, dobTxtEdt;
     private Spinner genderSpinner, stateSpinner, citySpinner ;
     private Button submitBtn;
     private ImageView dobBtn;
@@ -70,6 +70,7 @@ public class PersonalDetailsFragment extends Fragment {
         areaCodeEdt = view.findViewById(R.id.personal_detail_area_code_edt_id);
         submitBtn = view.findViewById(R.id.personal_detail_submit_btn_id);
         edtReqTxtBtn = view.findViewById(R.id.personal_detail_edt_request_txt_id);
+        dobTxtEdt = view.findViewById(R.id.personal_details_dob_text_edt);
 
 
         genderSelection();
@@ -137,16 +138,19 @@ public class PersonalDetailsFragment extends Fragment {
                 dobString.append((month+1)+"/");
                 dobString.append(year);
 
+                dobTxtEdt.setText(dobString);
+
 
             }
         },bdyear,bdMonth,bdDay);
+        dobPicker.getDatePicker().setMaxDate(System.currentTimeMillis() - 568025136000L);
         dobPicker.show();
 
     }
 
 
     private void genderSelection() {
-        genderAdapter = new ArrayAdapter<String>(view.getContext(),android.R.layout.simple_list_item_1,gender);
+        genderAdapter = new ArrayAdapter<String>(view.getContext(),R.layout.spinner_item_layout,R.id.spinner_item_txt,gender);
         genderSpinner.setAdapter(genderAdapter);
         selectedGender =  genderSpinner.getSelectedItem().toString();
 

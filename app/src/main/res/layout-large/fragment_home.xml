@@ -10,11 +10,11 @@
         android:id="@+id/home_top_component"
         android:layout_width="match_parent"
         android:layout_alignParentTop="true"
-        android:layout_height="165dp"
+        android:layout_height="205dp"
         android:background="@drawable/card_back_nine"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -37,11 +37,11 @@
                         android:id="@+id/home_credit_score_text"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="35dp"
+                        android:layout_marginTop="50dp"
                         android:text="Know your Credit Score"
                         android:textColor="@android:color/white"
                         android:layout_centerHorizontal="true"
-                        android:textSize="15sp"
+                        android:textSize="25sp"
                         android:textStyle="bold"
                         />
                     <TextView
@@ -53,7 +53,7 @@
                         android:textColor="@android:color/white"
                         android:layout_centerHorizontal="true"
                         android:layout_margin="10dp"
-                        android:textSize="15sp"
+                        android:textSize="20sp"
                         android:gravity="center_horizontal" />
                     <TextView
                         android:id="@+id/score_click_btn"
@@ -66,7 +66,7 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:textColor="@android:color/black"
-                        android:textSize="17sp"
+                        android:textSize="25sp"
                         />
 
                 </RelativeLayout>
@@ -77,22 +77,19 @@
 
     </RelativeLayout>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Finbaz"
+        android:scaleType="fitXY"
+        android:src="@drawable/logoslim"
+        android:padding="5dp"
         android:background="@drawable/back_phone"
-        android:textSize="20sp"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
-        android:paddingLeft="25dp"
-        android:paddingRight="25dp"
-        android:textStyle="bold"
-        android:textColor="#F41111"
+        android:elevation="2dp"
 
         />
+
 
     <LinearLayout
         android:id="@+id/homeLinearId"
@@ -100,7 +97,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:layout_below="@id/home_top_component"
-        android:layout_above="@id/navigationId"
+
         >
         <ScrollView
             android:id="@+id/cards_scroll_view"
@@ -122,7 +119,7 @@
                     android:layout_alignParentTop="true"
                     android:text="Our Services"
                     android:textStyle="bold"
-                    android:textSize="15sp"
+                    android:textSize="25sp"
                     android:textColor="@android:color/black"
                     android:layout_marginTop="10dp"
                     android:layout_marginLeft="10dp"
@@ -142,7 +139,7 @@
                         android:layout_weight="1"
                         android:orientation="horizontal"
                         android:weightSum="3"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         >
                         <androidx.cardview.widget.CardView
                             android:id="@+id/loan_card_id"
@@ -150,6 +147,7 @@
                             android:layout_weight="1"
                             android:layout_height="match_parent"
                             android:elevation="1dp"
+                            android:padding="10dp"
                             android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
                             >
@@ -160,8 +158,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_loan_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/loan"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -170,7 +168,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Loan"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_below="@id/card_loan_icon"
                                     android:layout_centerHorizontal="true"
                                     android:textColor="@android:color/black"
@@ -188,6 +186,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
+                            android:padding="10dp"
                             android:elevation="1dp"
                             >
                             <RelativeLayout
@@ -197,8 +196,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_sav_account_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/savings_account"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -210,7 +209,7 @@
                                     android:layout_below="@id/card_sav_account_icon"
                                     android:layout_centerHorizontal="true"
                                     android:textAlignment="center"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:textColor="@android:color/black"
                                     android:gravity="center_horizontal" />
 
@@ -225,6 +224,7 @@
                             android:layout_height="match_parent"
                             android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
+                            android:padding="10dp"
                             android:elevation="1dp"
                             >
                             <RelativeLayout
@@ -234,8 +234,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_insurance_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/insurance"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -244,7 +244,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Insurance"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_below="@id/card_insurance_icon"
                                     android:layout_centerHorizontal="true"
                                     android:textColor="@android:color/black"
@@ -261,7 +261,7 @@
                         android:layout_height="0dp"
                         android:layout_weight="1"
                         android:layout_marginTop="5dp"
-                        android:padding="5dp"
+                        android:padding="10dp"
                         >
 
                         <androidx.cardview.widget.CardView
@@ -270,6 +270,7 @@
                             android:layout_weight="1"
                             android:layout_height="match_parent"
                             android:elevation="1dp"
+                            android:padding="10dp"
                             android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
                             >
@@ -280,8 +281,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_credit_card_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/credit_card"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -291,7 +292,7 @@
                                     android:layout_height="wrap_content"
                                     android:text="Credit Card"
                                     android:layout_below="@id/card_credit_card_icon"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_centerHorizontal="true"
                                     android:textColor="@android:color/black"
                                     />
@@ -306,6 +307,7 @@
                             android:layout_weight="1"
                             android:layout_height="match_parent"
                             android:elevation="1dp"
+                            android:padding="10dp"
                             android:layout_marginLeft="2dp"
                             android:layout_marginRight="2dp"
                             >
@@ -316,8 +318,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_demat_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/demat"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -326,7 +328,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Demat Account"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_below="@id/card_demat_icon"
                                     android:layout_centerHorizontal="true"
                                     android:textColor="@android:color/black"
@@ -340,6 +342,7 @@
                             android:id="@+id/credit_score_card"
                             android:layout_width="0dp"
                             android:layout_weight="1"
+                            android:padding="10dp"
                             android:layout_height="match_parent"
                             android:elevation="1dp"
                             android:layout_marginLeft="2dp"
@@ -352,8 +355,8 @@
                                 >
                                 <ImageView
                                     android:id="@+id/card_cre_score_icon"
-                                    android:layout_width="50dp"
-                                    android:layout_height="50dp"
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
                                     android:src="@drawable/score"
                                     android:background="@drawable/back_phone"
                                     android:layout_centerHorizontal="true"
@@ -362,7 +365,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:text="Credit Score"
-                                    android:textSize="10sp"
+                                    android:textSize="15sp"
                                     android:layout_below="@id/card_cre_score_icon"
                                     android:layout_centerHorizontal="true"
                                     android:textColor="@android:color/black"
@@ -379,7 +382,7 @@
                     android:id="@+id/more_cardview"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:elevation="2dp"
+                    android:elevation="5dp"
                     android:layout_below="@id/servicesLinearLayout">
                     <RelativeLayout
                         android:layout_width="match_parent"
@@ -394,12 +397,13 @@
                             android:text="More"
                             android:layout_centerInParent="true"
                             android:padding="10dp"
+                            android:textSize="30dp"
                             android:textColor="@android:color/black"
                             android:gravity="center_horizontal"
                             />
                         <ImageView
-                            android:layout_width="30dp"
-                            android:layout_height="20dp"
+                            android:layout_width="60dp"
+                            android:layout_height="40dp"
                             android:src="@drawable/more"
                             android:layout_toRightOf="@id/card_more_text"
                             android:layout_centerVertical="true"
@@ -421,7 +425,7 @@
                     <com.smarteist.autoimageslider.SliderView
                         android:id="@+id/imageSlider"
                         android:layout_width="match_parent"
-                        android:layout_height="170dp"
+                        android:layout_height="280dp"
                         app:sliderAnimationDuration="600"
                         app:sliderAutoCycleDirection="back_and_forth"
                         app:sliderAutoCycleEnabled="true"
@@ -438,207 +442,132 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/refer_fnd_cardView"
-                    android:layout_width="match_parent"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    android:layout_below="@id/image_slider_cardview"
-                    app:cardCornerRadius="6dp"
-                    android:elevation="3dp"
 
+
+                <View
+                    android:id="@+id/below_slider_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_below="@id/image_slider_cardview"
+                    android:background="@android:color/white"
+                    android:elevation="2dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/play_games_cardview"
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctor_consultation_cardview"
                     >
+
                     <RelativeLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#E0E6F6"
+                        android:layout_height="200dp"
+                        android:background="@drawable/card_back_thirteen"
                         >
-                        <TextView
-                            android:id="@+id/refer_a_friend_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Refer a Friend"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:textColor="@android:color/black"
-                            android:layout_alignParentTop="true"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginLeft="10dp"
-                            />
-                        <TextView
-                            android:id="@+id/refer_friend_detail_txt"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/refer_a_friend_txt"
-                            android:text="Share the app with your friends.."
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="15dp"
-                            android:textSize="14sp"
-                            android:layout_marginRight="10dp"
-                            android:textColor="@android:color/black"
-                            />
-                        <Button
-                            android:id="@+id/refer_fnd_share_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/back_phone"
-                            android:text="Share"
-                            android:textAllCaps="false"
-                            android:textSize="17sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_below="@id/refer_friend_detail_txt"
-                            android:layout_marginLeft="6dp"
-                            android:layout_marginTop="10dp"
-                            />
-
                         <ImageView
-                            android:layout_width="60dp"
-                            android:layout_height="60dp"
-                            android:src="@drawable/share"
-                            android:layout_alignParentRight="true"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/game_play"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="10dp"
+                            android:layout_margin="10dp"
+                            android:layout_alignParentRight="true"
                             />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Play games for free and \nwin rewards daily..."
+                            android:textColor="#0A6BA6"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="10dp"/>
 
                     </RelativeLayout>
 
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/need_help_cardView"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_margin="10dp"
-                    android:layout_below="@id/refer_fnd_cardView"
-                    app:cardCornerRadius="6dp"
-                    android:elevation="3dp"
 
-                    >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#F8F8FA"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        >
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Need Support?"
-                            android:textSize="18sp"
-                            android:textColor="@android:color/black"
-                            android:textStyle="bold"
-                            />
-                        <LinearLayout
-                            android:layout_marginTop="10dp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginRight="10dp"
-                            android:gravity="center"
-                            android:background="@drawable/edit_back"
-                            >
-
-                            <!--                            <TextView-->
-                            <!--                                android:layout_width="wrap_content"-->
-                            <!--                                android:layout_height="wrap_content"-->
-                            <!--                                android:layout_gravity="center_vertical"-->
-                            <!--                                android:textColor="@android:color/black"-->
-                            <!--                                android:text="Query Type:"-->
-                            <!--                                android:layout_marginRight="8dp"-->
-                            <!--                                />-->
-
-                            <Spinner
-                                android:id="@+id/querySpinnerId"
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:pointerIcon="arrow"
-                                style="@style/Widget.AppCompat.Light.DropDownItem.Spinner"
-                                />
-
-                        </LinearLayout>
-
-                        <EditText
-                            android:id="@+id/query_spinner_msg_edt"
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:hint="Enter message (max 250 words)"
-                            android:maxLength="250"
-                            android:layout_gravity="top"
-                            android:paddingLeft="10dp"
-                            android:background="@drawable/edit_back"
-                            android:layout_margin="10dp"
-                            />
-                        <Button
-                            android:id="@+id/query_spinner_submit_btn"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Submit"
-                            android:textAllCaps="false"
-                            android:textSize="17sp"
-                            android:background="@drawable/card_back_one"
-                            android:textColor="@android:color/white"
-                            />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
-                    android:id="@+id/thank_you_cardView"
-                    android:layout_width="match_parent"
-                    android:layout_height="250dp"
-                    android:layout_margin="10dp"
-                    android:visibility="gone"
-                    android:layout_below="@id/need_help_cardView"
+                    android:id="@+id/doctor_consultation_cardview"
                     app:cardCornerRadius="6dp"
-                    android:elevation="3dp"
-
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/below_slider_view"
                     >
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="#F8F8FA"
-                        android:gravity="center"
-                        android:orientation="vertical"
-                        >
 
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/card_back_thirteen"
+                        >
                         <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_marginLeft="20dp"
-                            android:layout_alignParentRight="true"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/doctor"
+                            android:layout_margin="10dp"
                             android:layout_centerVertical="true"
-                            android:layout_marginRight="20dp"
-                            android:src="@drawable/thankful"
+                            android:layout_alignParentRight="true"
                             />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Thank You"
-                            android:textColor="@android:color/black"
-                            android:textSize="18sp"
-                            android:textStyle="bold"
-                            android:gravity="center_horizontal"
-                            />
-
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/refer_a_friend_txt"
-                            android:text="We have received your response. Our team will contact you shortly."
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="15dp"
-                            android:textColor="@android:color/black"
+                            android:text="Consult with doctor\n for any health issue... "
+                            android:textColor="#BF2E0A"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_centerVertical="true"
                             android:gravity="center_horizontal"
-                            />
+                            android:layout_margin="10dp"/>
 
-                    </LinearLayout>
+                    </RelativeLayout>
+
 
                 </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/utility_bill_cardview"
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/play_games_cardview"
+                    >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/card_back_thirteen"
+                        >
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:src="@drawable/bill"
+                            android:layout_marginRight="10dp"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentRight="true"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pay your utility bills\n via this app... "
+                            android:textColor="#C5870B"
+                            android:textStyle="bold"
+                            android:textSize="30sp"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_horizontal"
+                            android:layout_margin="10dp"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
 
             </RelativeLayout>
 

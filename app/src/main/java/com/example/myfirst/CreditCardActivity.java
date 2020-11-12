@@ -27,6 +27,7 @@ public class CreditCardActivity extends AppCompatActivity {
     private List<CreditCardModel> ccList;
     private CreditCardRecyclerAdapter ccAdapter;
     private RecyclerView creditCardRecycler;
+    private String fromIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +37,8 @@ public class CreditCardActivity extends AppCompatActivity {
         creditToolbar = findViewById(R.id.credit_card_toolbar_id);
         backBtn =findViewById(R.id.savings_account_back_button);
         setSupportActionBar(creditToolbar);
+
+        fromIntent = getIntent().getStringExtra("fromIntent");
 
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -52,9 +55,9 @@ public class CreditCardActivity extends AppCompatActivity {
 
         ccList = new ArrayList<>();
 
-        ccList.add(new CreditCardModel("saveSbi",R.drawable.simplysave_svi_card,R.string.simply_save_svi_card_title,true,4.9f,"₹ 499","₹ 499"));
-        ccList.add(new CreditCardModel("clickSbi",R.drawable.simply_click_sbi_card,R.string.simply_click_svi_card_title,false,4.7f,"₹ 499","₹ 499"));
-        ccList.add(new CreditCardModel("rblShop",R.drawable.rbl_shoprite,R.string.shoprite_rbl_card_title,false,4.8f,"₹ 0","₹ 500"));
+        ccList.add(new CreditCardModel("saveSbi",R.drawable.simplysave_svi_card,R.string.simply_save_svi_card_title,true,4.9f,"₹ 499","₹ 499",fromIntent));
+        ccList.add(new CreditCardModel("clickSbi",R.drawable.simply_click_sbi_card,R.string.simply_click_svi_card_title,false,4.7f,"₹ 499","₹ 499",fromIntent));
+        ccList.add(new CreditCardModel("rblShop",R.drawable.rbl_shoprite,R.string.shoprite_rbl_card_title,false,4.8f,"₹ 0","₹ 500",fromIntent));
 
 
         ccAdapter = new CreditCardRecyclerAdapter(ccList,CreditCardActivity.this);
@@ -82,9 +85,18 @@ public class CreditCardActivity extends AppCompatActivity {
         yesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeIntent = new Intent(CreditCardActivity.this,HomeActivity.class);
-                homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(homeIntent);
+
+                if(fromIntent.equals("home")){
+
+                    Intent homeIntent = new Intent(CreditCardActivity.this,HomeActivity.class);
+                    homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(homeIntent);
+                }else{
+
+                    Intent moreIntent = new Intent(CreditCardActivity.this,MoreActivity.class);
+                    moreIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(moreIntent);
+                }
             }
         });
         noBtn.setOnClickListener(new View.OnClickListener() {

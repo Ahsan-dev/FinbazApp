@@ -9,8 +9,11 @@ public class CreditCardModel {
     private float ratingNumber;
     private String fyf;
     private String rf;
+    private String creditParentPage;
 
-    public CreditCardModel(String cardName, int cardLogoResource, int cardTitleResource, boolean featured, float ratingNumber, String fyf, String rf) {
+
+
+    public CreditCardModel(String cardName, int cardLogoResource, int cardTitleResource, boolean featured, float ratingNumber, String fyf, String rf, String creditParentPage) {
         this.cardName = cardName;
         this.cardLogoResource = cardLogoResource;
         this.cardTitleResource = cardTitleResource;
@@ -18,6 +21,16 @@ public class CreditCardModel {
         this.ratingNumber = ratingNumber;
         this.fyf = fyf;
         this.rf = rf;
+        this.creditParentPage = creditParentPage;
+    }
+
+
+    public String getCreditParentPage() {
+        return creditParentPage;
+    }
+
+    public void setCreditParentPage(String creditParentPage) {
+        this.creditParentPage = creditParentPage;
     }
 
     public String getCardName() {

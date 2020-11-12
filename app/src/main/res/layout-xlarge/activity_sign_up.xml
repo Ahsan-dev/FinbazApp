@@ -11,17 +11,29 @@
         android:id="@+id/signup_toolbar_id"
         layout="@layout/savings_toolbar_layout"
         />
+
+    <ImageView
+        android:id="@+id/appTitleText"
+        android:layout_below="@id/signup_toolbar_id"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logoslim"
+        android:layout_marginTop="40dp"
+        />
+
     <TextView
         android:id="@+id/sign_up_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up Here"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:layout_centerHorizontal="true"
         android:textStyle="bold"
         android:textSize="40sp"
         android:textColor="@android:color/black"
-        android:layout_below="@id/signup_toolbar_id"
+        android:layout_below="@id/appTitleText"
         />
 
     <RelativeLayout

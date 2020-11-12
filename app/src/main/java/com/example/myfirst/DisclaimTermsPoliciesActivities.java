@@ -45,9 +45,9 @@ public class DisclaimTermsPoliciesActivities extends AppCompatActivity {
             public void onClick(View view) {
 
                 if(fronIntent.equals("sign_up")){
-                    startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+                    startActivity(new Intent(getApplicationContext(),SignUpActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 }else {
-                    startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+                    startActivity(new Intent(getApplicationContext(),HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
                 }
 
             }
@@ -65,9 +65,9 @@ public class DisclaimTermsPoliciesActivities extends AppCompatActivity {
     public void onBackPressed() {
 
         if(fronIntent.equals("sign_up")){
-            startActivity(new Intent(getApplicationContext(),SignUpActivity.class));
+            startActivity(new Intent(getApplicationContext(),SignUpActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
         }else {
-            startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+            startActivity(new Intent(getApplicationContext(),HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
         }
 
     }
@@ -84,12 +84,10 @@ public class DisclaimTermsPoliciesActivities extends AppCompatActivity {
         public Fragment getItem(int position) {
             switch (position){
                 case 0:
-                    return new DisclaimerFragment();
-                case 1:
                     return new PrivacyPolicyFragment();
-                case 2:
+                case 1:
                     return new DataPolicyFragment();
-                case 3:
+                case 2:
                     return new TermsUseFragment();
             }
             return null;
@@ -98,20 +96,19 @@ public class DisclaimTermsPoliciesActivities extends AppCompatActivity {
 
         @Override
         public int getCount() {
-            return 4;
+            return 3;
         }
 
         @Override
         public CharSequence getPageTitle(int position) {
             super.getPageTitle(position);
             switch(position){
+
                 case 0:
-                    return getResources().getText(R.string.disclaimer_tab_title);
-                case 1:
                     return getResources().getText(R.string.privacy_policy_tab_title);
-                case 2:
+                case 1:
                     return getResources().getText(R.string.data_policy_tab_title);
-                case 3:
+                case 2:
                     return getResources().getText(R.string.terms_use_tab_title);
 
             }

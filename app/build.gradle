@@ -9,14 +9,16 @@ android {
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
-
+        resConfigs "en"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources true
+
         }
     }
 }
@@ -48,6 +50,8 @@ dependencies {
 
     //Bubble Seekbar
     implementation 'com.xw.repo:bubbleseekbar:3.20-lite'
+
+
 
 
 

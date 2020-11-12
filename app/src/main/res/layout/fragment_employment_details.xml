@@ -67,8 +67,8 @@
                             android:id="@+id/employment_detail_company_name_txt_id"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Company Name:"
-                            android:visibility="gone"
+                            android:text="Company :"
+                            android:visibility="visible"
                             android:textColor="@android:color/black"
                             android:textSize="16sp"/>
 
@@ -78,9 +78,10 @@
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="10dp"
                             android:hint="Enter Company name:"
-                            android:inputType="number"
+                            android:inputType="textFilter"
                             android:background="@drawable/edit_back"
                             android:padding="5dp"
+                            android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890 "
                             />
 
 
@@ -154,7 +155,7 @@
                     android:layout_height="wrap_content"
                     android:text="Submit"
                     android:textAllCaps="false"
-                    android:background="@drawable/card_back_one"
+                    android:background="@drawable/back_toggle_sign"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="20dp"
                     android:textColor="@android:color/white"

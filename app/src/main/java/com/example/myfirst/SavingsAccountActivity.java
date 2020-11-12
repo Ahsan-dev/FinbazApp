@@ -28,6 +28,7 @@ public class SavingsAccountActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private ImageView backBtn;
     private TextView toolbarTitleTxt;
+    private String fromIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,15 +41,17 @@ public class SavingsAccountActivity extends AppCompatActivity {
         toolbarTitleTxt = findViewById(R.id.savings_toolbar_title_id);
         setSupportActionBar(toolbar);
 
+        fromIntent = getIntent().getStringExtra("fromIntent");
+
         toolbarTitleTxt.setText("Savings Bank Accounts");
 
         saList = new ArrayList<>();
 
-        saList.add(new SavingsAccountCardModel(R.drawable.indusind_bank_logo,R.string.indusind_savAcc_title,true,"upto 6%"," ₹ 0"," ₹ 0",4.8f,"indusind"));
-        saList.add(new SavingsAccountCardModel(R.drawable.kotak_mahindra_bank_logo,R.string.kotak_savAcc_title,true,"upto 4%"," ₹ 0"," ₹ 0",4.7f,"kotak"));
-        saList.add(new SavingsAccountCardModel(R.drawable.digibank,R.string.digibank_savAcc_title,false,"upto 5%"," ₹ 0"," ₹ 0",4.8f,"digibank"));
-        saList.add(new SavingsAccountCardModel(R.drawable.rbl_bank_logo,R.string.rbl_savAcc_title,false,"upto 6.75%"," ₹ 2,000"," ₹ 0",4.7f,"rblbank"));
-        saList.add(new SavingsAccountCardModel(R.drawable.idfc_first_bank_logo,R.string.idfc_savAcc_title,false,"upto 7%"," ₹ 10,000 - 25,000"," ₹ 0",4.7f,"idfcbank"));
+        saList.add(new SavingsAccountCardModel(R.drawable.indusind_bank_logo,R.string.indusind_savAcc_title,true,"upto 6%"," ₹ 0"," ₹ 0",4.8f,"indusind",fromIntent));
+        saList.add(new SavingsAccountCardModel(R.drawable.kotak_mahindra_bank_logo,R.string.kotak_savAcc_title,true,"upto 4%"," ₹ 0"," ₹ 0",4.7f,"kotak",fromIntent));
+        saList.add(new SavingsAccountCardModel(R.drawable.digibank,R.string.digibank_savAcc_title,false,"upto 5%"," ₹ 0"," ₹ 0",4.8f,"digibank",fromIntent));
+        saList.add(new SavingsAccountCardModel(R.drawable.rbl_bank_logo,R.string.rbl_savAcc_title,false,"upto 6.75%"," ₹ 2,000"," ₹ 0",4.7f,"rblbank",fromIntent));
+        saList.add(new SavingsAccountCardModel(R.drawable.idfc_first_bank_logo,R.string.idfc_savAcc_title,false,"upto 7%"," ₹ 10,000 - 25,000"," ₹ 0",4.7f,"idfcbank",fromIntent));
 
         saAdapter = new SavingsAccountCardRecyclerAdapter(saList,this);
         savingsAccountRecycler.setLayoutManager(new LinearLayoutManager(this));
@@ -81,9 +84,21 @@ public class SavingsAccountActivity extends AppCompatActivity {
         yesBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent homeIntent = new Intent(SavingsAccountActivity.this,HomeActivity.class);
-                homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
-                startActivity(homeIntent);
+
+                if(fromIntent.equals("home")){
+
+                    Intent homeIntent = new Intent(SavingsAccountActivity.this,HomeActivity.class);
+                    homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(homeIntent);
+
+                }else {
+
+                    Intent moreIntent = new Intent(SavingsAccountActivity.this,MoreActivity.class);
+                    moreIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
+                    startActivity(moreIntent);
+
+                }
+
             }
         });
         noBtn.setOnClickListener(new View.OnClickListener() {

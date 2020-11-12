@@ -14,7 +14,7 @@ import android.widget.TextView;
 public class SavingsBankDetailsActivity extends AppCompatActivity {
 
     private FrameLayout frameLayout;
-    private String bankName;
+    private String bankName, fromIntent;
     private Fragment fragment;
     private Toolbar toolbar;
     private ImageView backBtn;
@@ -35,10 +35,12 @@ public class SavingsBankDetailsActivity extends AppCompatActivity {
         bankName = getIntent().getStringExtra("bankName");
         tollbarTitle.setText("Features & More");
 
+        fromIntent = getIntent().getStringExtra("fromIntent");
+
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),SavingsAccountActivity.class));
+                startActivity(new Intent(getApplicationContext(),SavingsAccountActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
 
@@ -72,12 +74,12 @@ public class SavingsBankDetailsActivity extends AppCompatActivity {
 
         getSupportFragmentManager().beginTransaction().replace(R.id.savings_bank_details_frame_id, fragment).commit();
 
+    }
 
+    @Override
+    public void onBackPressed() {
 
-
-
-
-
+        startActivity(new Intent(getApplicationContext(),SavingsAccountActivity.class).putExtra("fromIntent",fromIntent).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK));
 
 
     }

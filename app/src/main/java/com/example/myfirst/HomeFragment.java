@@ -14,9 +14,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myfirst.Models.SliderItem;
+import com.google.android.material.tabs.TabLayout;
 import com.smarteist.autoimageslider.SliderAnimations;
 import com.smarteist.autoimageslider.SliderView;
 
@@ -26,21 +28,16 @@ import java.util.List;
 
 public class HomeFragment extends Fragment {
 
-    private EditText spinnerMsgEdt;
-    private Button spinnerSubmitBtn;
     private CardView moreCard;
     private List<SliderItem> imageList;
-    private SliderItem sliderItem;
     private SliderView sliderView;
-    private Spinner querySpinner;
     private String[] queryItems;
     private String spinnerValue;
     private String spinnerMessage;
     private StringBuilder querySubmission;
-    private CardView queryCard, thankYouCard;
-    private CardView loanCard, savAccCard, insuranceCard, credtCard, dematCard, credtScoreCard;
-    private Button shareBtn, gotItBtn;
+    private CardView loanCard, savAccCard, insuranceCard, credtCard, dematCard, credtScoreCard, doctorConsultCard, gamePlayCard, utilityBillCard;
     private View view;
+    private TextView scoreTxtBtn;
 
 
     public HomeFragment() {
@@ -55,12 +52,8 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        spinnerMsgEdt = view.findViewById(R.id.query_spinner_msg_edt);
-        spinnerSubmitBtn = view.findViewById(R.id.query_spinner_submit_btn);
-        querySpinner = view.findViewById(R.id.querySpinnerId);
+
         sliderView = view.findViewById(R.id.imageSlider);
-        queryCard =  view.findViewById(R.id.need_help_cardView);
-        thankYouCard = view.findViewById(R.id.thank_you_cardView);
         moreCard = view.findViewById(R.id.more_cardview);
         loanCard = view.findViewById(R.id.loan_card_id);
         savAccCard = view.findViewById(R.id.savings_account_card);
@@ -68,88 +61,50 @@ public class HomeFragment extends Fragment {
         credtCard = view.findViewById(R.id.credit_card_card);
         dematCard = view.findViewById(R.id.demat_card);
         credtScoreCard = view.findViewById(R.id.credit_score_card);
-        shareBtn = view.findViewById(R.id.home_refer_fnd_share_btn);
-        gotItBtn = view.findViewById(R.id.home_thankyou_got_it_btn);
+        scoreTxtBtn = view.findViewById(R.id.score_click_btn);
+        doctorConsultCard = view.findViewById(R.id.doctor_consultation_cardview);
+        gamePlayCard = view.findViewById(R.id.play_games_cardview);
+        utilityBillCard = view.findViewById(R.id.utility_bill_cardview);
 
 
         loanCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),LoanActivity.class));
+                startActivity(new Intent(view.getContext(),LoanActivity.class).putExtra("fromIntent","home"));
             }
         });
         savAccCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),SavingsAccountActivity.class));
+                startActivity(new Intent(view.getContext(),SavingsAccountActivity.class).putExtra("fromIntent","home"));
             }
         });
         insuranceCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),InsuranceActivity.class));
+                startActivity(new Intent(view.getContext(),InsuranceActivity.class).putExtra("fromIntent","home"));
             }
         });
         credtCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),CreditCardActivity.class));
+                startActivity(new Intent(view.getContext(),CreditCardActivity.class).putExtra("fromIntent","home"));
             }
         });
         dematCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),DematActivity.class));
+                startActivity(new Intent(view.getContext(),DematActivity.class).putExtra("fromIntent","home"));
             }
         });
         credtScoreCard.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),CreditScoreActivity.class));
+                startActivity(new Intent(view.getContext(),CreditScoreActivity.class).putExtra("fromIntent","home"));
             }
         });
 
 
-        thankYouCard.setVisibility(View.GONE);
-
-
-        querySubmission = new StringBuilder();
-        queryItems = getResources().getStringArray(R.array.query_items_spinner);
-        ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(view.getContext(),R.layout.spinner_item_layout,R.id.spinner_item_txt,queryItems);
-        querySpinner.setAdapter(spinnerAdapter);
-
-
-
-        spinnerSubmitBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                spinnerValue = querySpinner.getSelectedItem().toString();
-                spinnerMessage = spinnerMsgEdt.getText().toString();
-                querySubmission.append(spinnerValue);
-                querySubmission.append("\n\n");
-                querySubmission.append(spinnerMessage);
-
-                if(spinnerValue.equals("--Query Type--")){
-                    Toast.makeText(view.getContext(),"Please select a query type!!",Toast.LENGTH_LONG).show();
-                }else if(spinnerMessage.equals("") || spinnerMessage.length()<30){
-                    spinnerMsgEdt.setError("Message is mandatory and must be min 30 characters...");
-                    spinnerMsgEdt.requestFocus();
-                    return;
-                } else {
-                    thankYouCard.setVisibility(View.VISIBLE);
-                    queryCard.setVisibility(View.GONE);
-                    Toast.makeText(view.getContext(),querySubmission,Toast.LENGTH_LONG).show();
-                }
-            }
-        });
-
-        gotItBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(view.getContext(),HomeActivity.class));
-            }
-        });
 
 
         moreCard.setOnClickListener(new View.OnClickListener() {
@@ -160,16 +115,44 @@ public class HomeFragment extends Fragment {
             }
         });
 
+        doctorConsultCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext(),DoctorConsultActivity.class));
+
+            }
+        });
+
+        gamePlayCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext(),PlayGameActivity.class));
+
+            }
+        });
+
+        utilityBillCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(view.getContext(),UtilityBillActivity.class));
+
+            }
+        });
+
 
 
 
 
 
         imageList = new ArrayList<>();
-        imageList.add(new SliderItem(R.drawable.account));
-        imageList.add(new SliderItem(R.drawable.demat));
-        imageList.add(new SliderItem(R.drawable.credit_card));
-        imageList.add(new SliderItem(R.drawable.insurance));
+        imageList.add(new SliderItem(R.drawable.finbaz1));
+        imageList.add(new SliderItem(R.drawable.finbaz2));
+        imageList.add(new SliderItem(R.drawable.finbaz3));
+        imageList.add(new SliderItem(R.drawable.finbaz4));
+        imageList.add(new SliderItem(R.drawable.finbaz5));
 
 
         SliderAdapterExample adapter = new SliderAdapterExample(view.getContext(),imageList);
@@ -188,20 +171,12 @@ public class HomeFragment extends Fragment {
 
 
 
-        shareBtn.setOnClickListener(new View.OnClickListener() {
+
+
+        scoreTxtBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment newFragment = new ReferAndEarnFragment();
-                // consider using Java coding conventions (upper first char class names!!!)
-                FragmentTransaction transaction = getFragmentManager().beginTransaction();
-
-                // Replace whatever is in the fragment_container view with this fragment,
-                // and add the transaction to the back stack
-                transaction.replace(R.id.home_frame_id, newFragment);
-                transaction.addToBackStack(null);
-
-                // Commit the transaction
-                transaction.commit();
+                startActivity(new Intent(view.getContext(),CreditScoreActivity.class).putExtra("fromIntent","home"));
             }
         });
 

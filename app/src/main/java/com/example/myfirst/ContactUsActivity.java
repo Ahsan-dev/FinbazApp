@@ -32,6 +32,7 @@ public class ContactUsActivity extends AppCompatActivity {
     private String spinnerMessage;
     private CardView thankYouCard;
     private RelativeLayout queryRelative;
+    private ImageView contactUsImg;
 
 
     @Override
@@ -48,6 +49,7 @@ public class ContactUsActivity extends AppCompatActivity {
         spinnerEdt = findViewById(R.id.contact_us_query_spinner_msg_edt);
         submitBtn = findViewById(R.id.contact_us_query_spinner_submit_btn);
         gotItBtn = findViewById(R.id.contact_us_thankyou_got_it_btn);
+        contactUsImg = findViewById(R.id.contact_us_image);
 
         thankYouCard = findViewById(R.id.contact_us_thank_you_cardView);
         queryRelative = findViewById(R.id.contact_us_query_relative);
@@ -56,7 +58,8 @@ public class ContactUsActivity extends AppCompatActivity {
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+//                finish();
+                startActivity(new Intent(ContactUsActivity.this,HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
             }
         });
 
@@ -88,6 +91,7 @@ public class ContactUsActivity extends AppCompatActivity {
                 } else {
                     thankYouCard.setVisibility(View.VISIBLE);
                     queryRelative.setVisibility(View.GONE);
+                    contactUsImg.setVisibility(View.GONE);
                     Toast.makeText(view.getContext(),querySubmission,Toast.LENGTH_LONG).show();
                 }
             }
@@ -96,7 +100,10 @@ public class ContactUsActivity extends AppCompatActivity {
         gotItBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(),ContactUsActivity.class));
+//                finish();
+                startActivity(new Intent(ContactUsActivity.this,HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
+
+
             }
         });
 
@@ -107,8 +114,8 @@ public class ContactUsActivity extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-
-        startActivity(new Intent(getApplicationContext(),HomeActivity.class));
+//        finish();
+        startActivity(new Intent(ContactUsActivity.this,HomeActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK));
 
     }
 }

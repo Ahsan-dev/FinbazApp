@@ -6,10 +6,12 @@
     android:layout_height="match_parent"
     tools:context=".MiscellaneousActivity">
 
-    <TextView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Miscellaneous"
+        android:src="@drawable/coming_soon_n"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
         />
 
 </RelativeLayout>

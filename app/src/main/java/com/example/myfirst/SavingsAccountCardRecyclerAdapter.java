@@ -39,7 +39,7 @@ public class SavingsAccountCardRecyclerAdapter extends RecyclerView.Adapter<Savi
 
         final SavingsAccountCardModel saAccModel = saList.get(position);
 
-        Picasso.get().load(saAccModel.getBankLogoResource()).placeholder(R.drawable.account).into(holder.bankLogoImage);
+        Picasso.get().load(saAccModel.getBankLogoResource()).into(holder.bankLogoImage);
         holder.saBankTitle.setText(saAccModel.getBankTitleResource());
         if(saAccModel.isFeatured()){
 
@@ -61,6 +61,7 @@ public class SavingsAccountCardRecyclerAdapter extends RecyclerView.Adapter<Savi
             public void onClick(View view) {
                 Intent bankDetailIntent = new Intent(context,SavingsBankDetailsActivity.class);
                 bankDetailIntent.putExtra("bankName",saAccModel.getBankname());
+                bankDetailIntent.putExtra("fromIntent",saAccModel.getParentPage());
                 context.startActivity(bankDetailIntent);
             }
         });

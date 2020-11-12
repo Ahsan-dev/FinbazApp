@@ -39,7 +39,7 @@ public class SliderAdapterExample extends
 
         SliderItem sliderItem = mSliderItems.get(position);
 
-        Picasso.get().load(sliderItem.getImageResource()).placeholder(R.drawable.accounting).into(viewHolder.sliderItemImage);
+        Picasso.get().load(sliderItem.getImageResource()).into(viewHolder.sliderItemImage);
 
 
 
